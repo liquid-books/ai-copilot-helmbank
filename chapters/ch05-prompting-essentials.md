@@ -329,17 +329,23 @@ underwriting committee discussion.
 ```
 
 ```
-Act as a BSA/AML compliance officer preparing for a quarterly regulatory review. 
-Read the following internal process document and identify any language that 
-could raise questions from an OCC examiner. Be specific about which 
-examiner guidelines each concern maps to.
+Act as a BSA/AML compliance officer at an international gateway bank with 
+deep experience in OFAC screening and foreign national KYC. Preparing for 
+a quarterly regulatory review. Read the following internal process document 
+and identify any language that could raise questions from an OCC or FDIC 
+examiner, particularly around enhanced due diligence for high-risk 
+international clients and cross-border wire documentation practices.
 ```
 
 ```
-Act as a relationship manager who has known this client for five years. 
-Based on the following account summary and recent correspondence, 
-draft a renewal conversation agenda that acknowledges the relationship 
-history and anticipates the client's likely concerns about rate.
+Act as a bilingual (English/Spanish) relationship manager at a Miami-based 
+international bank who has known this Latin American client for five years. 
+Based on the following account summary and recent correspondence, draft a 
+renewal conversation agenda — in English, with key phrases also in Spanish 
+— that acknowledges the relationship history, anticipates the client's 
+concerns about U.S. interest rate environment from a Latin American 
+investor perspective, and references their use of our HelmInOne 
+multi-currency wire platform.
 ```
 
 :::{tip}
@@ -381,24 +387,29 @@ Walk me through your reasoning step-by-step before giving me the final answer.
 **Helm Bank examples:**
 
 ```
-I need to evaluate whether to recommend our bank's SBA 504 program 
-to a prospect who currently has a conventional commercial term loan 
-with us coming up for renewal. 
+I need to evaluate whether to recommend our bank's multi-currency wire 
+service and international cash management suite to a Colombian multinational 
+prospect who currently uses a large U.S. bank for their USD wire operations 
+but is frustrated with the service quality and lack of Spanish-speaking 
+support.
 
 Walk me through your reasoning step-by-step: what factors should I 
-consider, what are the trade-offs, and what questions do I need answered 
-before making a recommendation? Then give me your final recommendation framework.
+consider, what are the trade-offs, what objections they are likely to raise, 
+and what questions do I need answered about their current banking relationship 
+before making a recommendation? Then give me a final recommendation framework.
 ```
 
 ```
-A commercial deposit client who generates \$4.2M in average deposits 
-is asking us to match a competitor's offer that includes a higher yield, 
-dedicated treasury services, and a dedicated relationship manager. 
-We currently provide standard treasury services.
+A foreign national client who generates $4.2M in average deposits across 
+three multi-currency accounts is asking us to match a competitor's offer 
+that includes a higher yield and a Spanish-speaking dedicated relationship 
+manager. They also mentioned the competitor offers better MT940 
+reconciliation exports for their Colombia-based accounting team.
 
-Walk me through your reasoning on whether to negotiate, match, or let 
-this client leave — then give me a prioritized recommendation with the 
-key risks clearly stated.
+Walk me through your reasoning on whether to negotiate, match the offer, 
+or let this client leave — considering both the financial and relationship 
+dimensions — then give me a prioritized recommendation with the key 
+risks clearly stated.
 ```
 
 :::{dropdown} Why Chain-of-Thought Works at a Technical Level
@@ -446,15 +457,18 @@ Now [state the task]. Match the style, depth, and structure of the strong exampl
 **Helm Bank examples:**
 
 ```
-Here are three examples of client relationship summary memos that our team 
-considers high quality, and one example of a weaker memo.
+Here are three examples of international client relationship summary memos 
+that our team considers high quality — each covering a Latin American 
+multinational or foreign national client — and one example of a weaker memo.
 
-[EXAMPLE 1 — Strong: paste text]
+[EXAMPLE 1 — Strong: paste text — note bilingual elements and cross-border 
+account context]
 [EXAMPLE 2 — Strong: paste text]
 [EXAMPLE 3 — Weak: paste text]
 
-Now write a relationship summary memo for the following client using the 
-structure and depth of the strong examples. Here is the raw account data:
+Now write a relationship summary memo for the following international client 
+using the structure, depth, and bilingual sensitivity of the strong examples. 
+Here is the raw account data:
 [paste account information]
 ```
 
@@ -700,78 +714,83 @@ Here is where the theory becomes practice. This exercise produces one of the cle
 
 **The baseline question:**
 
-> *"How should Helm Bank approach a commercial real estate client who is approaching loan maturity during a period of elevated rates and declining collateral values?"*
+> *"How should Helm Bank communicate with a Latin American multinational client who is concerned about recent U.S. regulatory changes affecting foreign national wire transfers and is asking whether to consolidate their banking relationship elsewhere?"*
 
-This is a real strategic question that any commercial lender or relationship manager at Helm Bank might face. It is specific enough to be meaningful, general enough to work without confidential client data.
+This is a real strategic question that any relationship manager, compliance officer, or business development officer at Helm Bank might face. It is specific enough to be meaningful, general enough to work without confidential client data.
 
 **Run it five times — once with each technique:**
 
 ::::{tab-set}
 :::{tab-item} Technique 1: Role-Based
 ```
-Act as a veteran workout officer at a regional bank with 15 years 
-of experience managing distressed commercial real estate credits. 
-How should Helm Bank approach a commercial real estate client 
-who is approaching loan maturity during a period of elevated rates 
-and declining collateral values?
+Act as a veteran international banking relationship manager with 15 years 
+of experience serving Latin American multinational clients at U.S. gateway 
+banks. How should Helm Bank communicate with a Latin American multinational 
+client who is concerned about recent U.S. regulatory changes affecting 
+foreign national wire transfers and is asking whether to consolidate their 
+banking relationship elsewhere?
 ```
-*What to notice:* The response should have a notably more specific, risk-focused, and action-oriented character than a generic answer. It should reference specific workout strategies, forbearance considerations, and documentation practices.
+*What to notice:* The response should have a notably more specific, client-relationship-focused, and culturally-aware character than a generic answer. It should reference regulatory context (BSA/AML, OFAC), communication strategies in Spanish, and the value of boutique personalized service vs. a large bank's standardized approach.
 :::
 :::{tab-item} Technique 2: Chain-of-Thought
 ```
 Walk me through your reasoning step by step — considering 
-all the relevant factors, trade-offs, and bank interests — 
-before giving me a final recommendation on how Helm Bank 
-should approach a commercial real estate client who is 
-approaching loan maturity during a period of elevated rates 
-and declining collateral values.
+all the relevant regulatory, relationship, and competitive factors — 
+before giving me a final recommendation on how Helm Bank should 
+communicate with a Latin American multinational client who is 
+concerned about recent U.S. regulatory changes affecting foreign 
+national wire transfers and is asking whether to consolidate their 
+banking relationship elsewhere.
 ```
-*What to notice:* The response should show its work — market context analysis, borrower position assessment, bank risk exposure, option evaluation — before landing on recommendations. The reasoning chain is the value.
+*What to notice:* The response should show its work — regulatory context analysis, client relationship assessment, competitive positioning, communication strategy options — before landing on recommendations. The reasoning chain is the value.
 :::
 :::{tab-item} Technique 3: Few-Shot
 ```
-Here are two examples of how our commercial team has handled 
-similar situations well:
+Here are two examples of how our relationship team has handled 
+similar client retention situations well:
 
 Example 1 — Strong: [paste a real or hypothetical example 
-of a well-handled maturity extension negotiation]
+of a well-handled regulatory concern conversation with a 
+Latin American business client]
 
-Example 2 — Strong: [paste another strong example]
+Example 2 — Strong: [paste another strong example — perhaps 
+a bilingual client memo that addressed a compliance concern 
+clearly and retained the relationship]
 
-Now give me a recommendation for how Helm Bank should approach 
-a commercial real estate client who is approaching loan maturity 
-during a period of elevated rates and declining collateral values. 
-Match the style and specificity of the strong examples.
+Now give me a recommendation for how Helm Bank should communicate 
+with a Latin American multinational client concerned about regulatory 
+changes affecting their wires. Match the style and specificity of 
+the strong examples.
 ```
-*What to notice:* The output should mirror the structure and depth of your examples. If your examples were concise and action-oriented, the new output will be too.
+*What to notice:* The output should mirror the structure and depth of your examples. If your examples were concise, bilingual, and relationship-forward, the new output will be too.
 :::
 :::{tab-item} Technique 4: Reverse Prompting
 ```
-I need a recommendation on how Helm Bank should approach 
-a commercial real estate client who is approaching loan maturity 
-during a period of elevated rates and declining collateral values. 
+I need a recommendation on how Helm Bank should communicate with 
+a Latin American multinational client who is concerned about recent 
+U.S. regulatory changes affecting foreign national wire transfers and 
+is asking whether to consolidate their banking relationship elsewhere. 
 Before you give me an answer, ask me any questions you need 
 to give me the most useful possible recommendation.
 ```
-*What to notice:* Copilot should ask about the specific client situation, loan size, collateral type, borrower relationship history, and bank appetite for extension vs. resolution. Your answers will produce a significantly more tailored recommendation.
+*What to notice:* Copilot should ask about the specific client relationship history, wire volume, what regulatory changes they're referencing, the client's primary language preferences, and Helm Bank's current service model for this client. Your answers will produce a significantly more tailored recommendation.
 :::
 :::{tab-item} Technique 5: Sparring Partner
 ```
-Play the role of a skeptical senior credit officer who has 
-seen too many banks extend-and-pretend their way into 
-larger losses. I'm going to propose that we offer a 
-12-month maturity extension with a modified covenant 
-structure to a commercial real estate client approaching 
-maturity in a tough market. Push back hard. Tell me where 
-this approach is risky and what I'm not thinking about.
+Play the role of a skeptical Latin American CFO who has had 
+frustrating experiences with U.S. banks not understanding cross-border 
+compliance requirements and who is genuinely considering moving their 
+company's banking relationship. I'm going to explain why they should 
+stay with Helm Bank despite their concerns about new wire regulations. 
+Push back hard. Tell me where my arguments are weak.
 
-My proposal: We offer the extension at current market rate 
-plus a 50bps risk premium, with a requirement for a fresh 
-appraisal and a debt service coverage covenant of 1.15x. 
-If they can't meet DSCR at renewal, they agree to a 
-principal reduction plan.
+My proposal: I'll explain that Helm Bank's boutique size means personal 
+attention, our BSA/AML and OFAC teams are specialized in Latin American 
+client profiles, and I'll offer a dedicated review session with our 
+compliance team to walk through exactly which transactions are affected 
+and why — in Spanish.
 ```
-*What to notice:* This output should be genuinely challenging. A good Sparring Partner response will identify risks like appraisal gaming, DSCR covenant enforceability, principal reduction mechanics, and the regulatory optics of the extension.
+*What to notice:* This output should be genuinely challenging. A good Sparring Partner response will push back on the boutique bank's regulatory resources vs. a large bank's, question whether a compliance meeting solves a business efficiency problem, and surface concerns about ongoing regulatory risk to their transaction volume.
 :::
 ::::
 
@@ -806,19 +825,19 @@ Here is a concrete five-day prompting plan:
   - Task to Try at Helm Bank
 * - Monday
   - Role-Based Prompting
-  - Assign a relevant professional role and use it to analyze a document or memo you're currently working on
+  - Assign a relevant professional role and use it to analyze a document or memo you're currently working on — e.g., act as a bilingual international banking specialist reviewing a client communication for tone and accuracy
 * - Tuesday
   - Chain-of-Thought
-  - Use Copilot to reason through a decision or recommendation you need to make this week — ask for the step-by-step reasoning before the conclusion
+  - Use Copilot to reason through a decision or recommendation you need to make this week — e.g., whether to escalate a cross-border wire flagged for enhanced review, with step-by-step reasoning before the conclusion
 * - Wednesday
   - Few-Shot
-  - Pull two or three examples of a document type your team produces regularly, and ask Copilot to generate a new one in the same style
+  - Pull two or three examples of a document type your team produces regularly (client relationship summaries, wire instruction confirmations, foreign national loan cover letters), and ask Copilot to generate a new one in the same style
 * - Thursday
   - Reverse Prompting
-  - Let Copilot interview you for a presentation or proposal you need to develop — answer its questions, then review the output
+  - Let Copilot interview you for a client proposal, bilingual presentation, or international deal summary you need to develop — answer its questions, then review the output
 * - Friday
   - Sparring Partner
-  - Present one of your current ideas or recommendations to Copilot in the Sparring Partner mode and see what comes back
+  - Present one of your current client retention strategies or international deal recommendations to Copilot in the Sparring Partner mode and see what objections surface
 ```
 
 By Friday, you will have hands-on experience with all five techniques applied to real work. That is more practical prompting practice than most Copilot users accumulate in their first three months.
@@ -827,9 +846,9 @@ By Friday, you will have hands-on experience with all five techniques applied to
 
 ## 9. Productive Struggle Problem
 
-You are a senior relationship manager at Helm Bank. Your most important portfolio client — a \$22M commercial real estate borrower with six properties across South Florida — has just informed you that a competitor bank is offering to refinance their entire portfolio, claiming it can save them \$180,000 annually in interest costs.
+You are a senior relationship manager at Helm Bank. Your most important portfolio client — a Colombian multinational company with $18M in deposits, regular multi-currency wire activity through HelmInOne, and a seven-year relationship with the bank — has just informed you that a large U.S. bank is courting them aggressively. The competitor is offering a higher yield on their operating accounts, a dedicated Spanish-speaking relationship team in New York, and a seamless MT940 export integration with the client's ERP system.
 
-You have thirty minutes before the client calls to discuss. You need: a clear understanding of whether the competitor's claim is plausible, a retention strategy that does not simply concede on rate, and talking points that draw on the eight-year relationship history.
+You have thirty minutes before the client calls to discuss. You need: a clear understanding of whether the competitor's offer is genuinely superior or primarily a negotiating tactic, a retention strategy that emphasizes Helm Bank's international boutique advantages over a large bank's standardized approach, and talking points — ideally with key phrases available in Spanish — that draw on the seven-year relationship history and the bank's deep Latin American market expertise.
 
 You have access to Microsoft 365 Copilot and the five techniques from this chapter.
 

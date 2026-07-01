@@ -106,7 +106,7 @@ John Kotter's framework, developed from studying hundreds of organizational tran
   - Identify 3–5 respected practitioners from different teams who believe in this and will model it
 * - 3. Form a strategic vision
   - People need to see where they are going, not just what they are leaving behind
-  - "In 12 months, every RM comes to a client meeting briefed by AI. Every credit package is first-drafted by Copilot."
+  - "In 12 months, every RM comes to a client meeting briefed by AI in both English and Spanish. Every international wire summary and foreign national loan file is first-drafted by Copilot."
 * - 4. Enlist a volunteer army
   - You need early adopters before you need everyone
   - Don't try to convert the skeptics first. Find the curious. Start there.
@@ -255,7 +255,7 @@ The most instructive case studies in AI adoption are not the top-down strategic 
 
 **Sears** — the 50-app story from Chapter 2 — was built on a similar pattern. The employees who built those applications were not following a mandate. They were solving problems they personally found frustrating, using tools they had been given access to, and showing their results to their colleagues. The organizational contribution was not the mandate. It was the **access and the permission**.
 
-At Helm Bank, the same pattern is available. The question is: who in your team — or in your department — has that Champion spark? And what does it cost to give them access, time, and permission?
+At Helm Bank, the same pattern is especially powerful. With 158 colleagues across lending, operations, compliance, client services, and technology, AI adoption spreads through personal trust and direct relationships — not organization-wide mandates. At Helm Bank's scale, one Champion in the wire operations team who saves two hours per week drafting multilingual client instructions will be asked about it by their colleagues before the month is out. The question is: who in your team has that Champion spark? And what does it cost to give them access, time, and permission?
 
 ---
 
@@ -724,7 +724,7 @@ Change management is not the soft side of AI adoption. It is the whole game.
 
 The technology works. The people are capable. The question — always the question — is whether the organizational conditions exist for individual action to become collective behavior. Whether the Champions have platforms. Whether the permission is real. Whether the governance enables rather than paralyzes. Whether the leaders are modeling rather than mandating.
 
-Helm Bank has something that most organizations never get: a workforce that already operates with high professional standards, genuine client commitment, and a culture of excellence that has been building since 2009. That culture is not an obstacle to AI adoption. It is the raw material that makes AI adoption sustainable — because when professionals with those standards apply AI to their work, they do not lower their standards to match the AI's output. They raise the AI's output to match their standards.
+Helm Bank has something that most organizations never get: a workforce that already operates with high professional standards, genuine client commitment, and a culture of excellence built over more than 35 years of serving multinational companies and foreign nationals navigating the U.S. financial system. That culture — grounded in Empathy, Curiosity, Creativity, and Passion — is not an obstacle to AI adoption. It is the raw material that makes AI adoption sustainable. When professionals who prize multilingual client relationships, cross-border compliance precision, and personalized service apply AI to their work, they do not lower their standards to match the AI's output. They raise the AI's output to match their standards.
 
 The frameworks in this chapter — Kotter, ADKAR, Bridges — are not the answer. They are the map. You are the navigator. And the destination is a Helm Bank where AI-empowered professionals are the standard, not the exception.
 
