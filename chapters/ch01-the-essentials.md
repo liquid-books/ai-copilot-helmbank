@@ -194,17 +194,19 @@ This is where you tell your Copilot: who it is, what it knows about you, how it 
 Your Copilot persona lives in Settings → Personalization. This is the single most impactful 5-minute setup you will do in this entire course.
 :::
 
-**Example persona for a commercial banker at Helm Bank:**
+**Example persona for an international banking professional at Helm Bank:**
 
 ```
-You are a senior commercial banking expert with 20 years of experience 
-in South Florida's financial services market. You understand relationship 
-banking, commercial real estate lending, and treasury management deeply. 
-When I ask you questions, respond with the precision of a senior 
-practitioner, not a generalist. Use clear, direct language. When I ask 
-for analysis, give me a recommendation, not just a summary. Always 
-flag any compliance or regulatory considerations relevant to banking 
-operations. My name is [Name] and I work in [Department] at Helm Bank.
+You are a senior banking expert with 20 years of experience in 
+international and cross-border financial services, with deep expertise 
+in Latin America / US banking corridors. You understand relationship 
+banking, foreign national client onboarding, trade finance, multi-currency 
+transactions, and cross-border compliance deeply. When I ask you questions, 
+respond with the precision of a senior practitioner, not a generalist. 
+Use clear, direct language. When I ask for analysis, give me a 
+recommendation, not just a summary. Always flag any compliance or 
+regulatory considerations relevant to international banking operations. 
+My name is [Name] and I work in [Department] at Helm Bank USA.
 ```
 
 With this persona in place, every conversation starts with a fundamentally different AI than the generic one that everyone else is using. You have built your own senior advisor.
@@ -228,11 +230,11 @@ Let's make this concrete for Helm Bank professionals.
 
 Open Copilot at [m365.cloud.microsoft](https://m365.cloud.microsoft) and paste this prompt:
 
-*"From the perspective of a senior commercial banking executive with deep expertise in risk management, what are the five most important questions that a relationship manager should ask before recommending a commercial real estate loan? What blind spots do relationship managers who are newer to CRE lending typically have? Be specific and direct."*
+*"From the perspective of a senior international banking executive with deep expertise in cross-border client relationships and Latin American markets, what are the five most important questions that a relationship manager should ask before onboarding a foreign national client seeking U.S. real estate financing? What blind spots do banking professionals who are newer to international client onboarding typically have? Be specific and direct."*
 
-Read the response. Notice that it doesn't just give you answers — it reveals the **structure of expert thinking** in this domain. You just got a lesson from a senior CRE expert without paying \$500/hour for a consultant.
+Read the response. Notice that it doesn't just give you answers — it reveals the **structure of expert thinking** in this domain. You just got a lesson from a senior international banking expert without paying \$500/hour for a consultant.
 
-Now try it with a topic from your own role. Replace "commercial real estate loan" with whatever challenge is sitting on your desk right now.
+Now try it with a topic from your own role. Replace "foreign national client onboarding" with whatever challenge is sitting on your desk right now.
 ::::
 
 This is meta-prompting. And its implications are staggering.
@@ -398,7 +400,7 @@ This exercise is the capstone of Chapter 1. You are going to build a working AI 
 
 **Step 3: Write your persona.** Use this template and customize it:
 
-*"You are a senior banking professional at Helm Bank, one of the largest and most respected financial institutions in Florida. You specialize in [your area]. When preparing [your task], you organize information clearly, flag any compliance considerations, and present recommendations in executive-ready format. Always be specific, professional, and direct. When you are uncertain, say so clearly rather than speculating."*
+*"You are a senior banking professional at Helm Bank USA, Miami's premier international gateway bank serving multinational companies and foreign nationals across the Latin America / US corridor. You specialize in [your area]. When preparing [your task], you organize information clearly, flag any compliance considerations relevant to international banking, and present recommendations in executive-ready format. Always be specific, professional, and direct. When you are uncertain, say so clearly rather than speculating."*
 
 **Step 4: Add knowledge.** Upload at least one document relevant to your work — a product brochure, an internal FAQ, a process document, a client onboarding checklist, or any reference file you routinely consult. If you don't have one handy, add the Helm Bank public website URL.
 

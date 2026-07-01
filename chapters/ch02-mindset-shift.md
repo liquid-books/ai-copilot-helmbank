@@ -98,7 +98,7 @@ Sears Holdings — before its collapse — launched an internal initiative to bu
 
 The point is not Sears. The point is the pattern. **The organizations that win the AI era are not the ones with the best AI team. They are the ones where the most people are building.**
 
-Helm Bank has 2,000+ employees. The gap between where Helm Bank is today and where it could be with 2,000 AI-empowered professionals building, experimenting, and improving — that gap is the opportunity. And it starts with you.
+Helm Bank has approximately 158 employees. At this scale, every person matters — which is precisely what makes AI adoption at Helm Bank so powerful. There is no bureaucratic rollout required, no enterprise-wide implementation slog. When one person discovers a workflow that works, everyone knows by Thursday. The gap between where Helm Bank is today and where it could be with 158 AI-empowered professionals building, experimenting, and improving — that gap is the opportunity. And it starts with you.
 
 But here is the hard truth: the gap between AI leaders and AI laggards is not, at its core, a technology gap. It is a measurement gap (we don't track the right things), a culture gap (we don't make it safe to experiment and fail), and above all, a **permission gap** (people are waiting for someone to tell them it's okay to start).
 
@@ -147,7 +147,7 @@ If your SharePoint is disorganized, your email folders are chaos, and your file 
 This is the most important rule, and the hardest to internalize. AI is a tool. A spectacular tool, but a tool. The ethical responsibility, the professional judgment, the regulatory accountability — all of it remains with you. AI can draft the credit memo. You decide whether the loan gets approved. AI can summarize the compliance brief. You decide how to advise the client. Use AI for first drafts, for research, for synthesis, for efficiency. Apply human judgment to everything that matters. Always.
 ::::
 
-These rules are not here to slow you down. They are here to keep the program alive — and to keep Helm Bank's record of trustworthiness intact. The Newsweek recognition for trustworthiness was earned by ten thousand decisions made by people who took their responsibilities seriously. This program asks you to bring that same seriousness to your AI practice.
+These rules are not here to slow you down. They are here to keep the program alive — and to keep Helm Bank's record of trustworthiness intact. Helm Bank's reputation was built one client relationship at a time, across more than 35 years of serving multinational clients and foreign nationals who placed their trust in this institution precisely because it is careful, personal, and accountable. This program asks you to bring that same seriousness to your AI practice.
 
 Now let's talk about what's possible.
 
@@ -247,7 +247,7 @@ The reframe is this: **upskilling is not the cost of AI adoption. It is the poin
 
 The organizations that get this right — the ones where AI adoption actually takes hold and generates the 1.7× revenue multiplier — are the ones where leaders connect AI learning to professional growth, not to operational efficiency. They say: "We are doing this because we want you to become more powerful in your role. Because we believe your judgment is valuable and AI is what lets that judgment do more." That reframe changes everything.
 
-Helm Bank has always believed in the development of its people. The Newsweek recognition for trustworthiness was not an accident — it was the accumulated result of thousands of people who cared about their work and the clients they served. That care is the raw material. AI is the amplifier.
+Helm Bank has always believed in the development of its people. The reputation Helm Bank holds — as a trusted, relationship-driven gateway for international clients — was not an accident. It was built through thousands of careful decisions made by people who genuinely cared about their clients' outcomes. The multilingual team, the HelmInOne platform, the Bogotá representative office — all of it reflects a culture that shows up for clients in ways the big banks don't. That care is the raw material. AI is the amplifier.
 
 The question is whether you can feel that. Whether this is happening *to* you, or *for* you.
 
@@ -641,7 +641,7 @@ This exercise uses Microsoft 365 Copilot Chat to engage in the highest-value use
 3. Click the **Copilot Chat** icon in the left sidebar (speech bubble icon), or simply begin typing in the chat field on the home page.
 4. Paste the following prompt exactly — then replace the bracketed sections with your own information:
 
-> *"I am a [your role] at Helm Bank. I'm going to share a decision I'm currently working through. Play the role of a highly skeptical, experienced banking executive with 25 years of experience in [your area — e.g., commercial lending, treasury management, retail banking]. Push back on my reasoning one assumption at a time. Be direct. Be specific. Do not flatter me. Let's begin: [describe a real professional decision or challenge you're currently working through]."*
+> *"I am a [your role] at Helm Bank. I'm going to share a decision I'm currently working through. Play the role of a highly skeptical, experienced banking executive with 25 years of experience in [your area — e.g., international client onboarding, trade finance, cross-border compliance, foreign exchange]. Push back on my reasoning one assumption at a time. Be direct. Be specific. Do not flatter me. Let's begin: [describe a real professional decision or challenge you're currently working through]."*
 
 5. Read Copilot's response carefully. Then engage: push back, defend your position, update your thinking where the pushback is valid.
 6. After 3–4 exchanges, pause and ask: *"What is the most important assumption I am making that I haven't examined? What would a pessimist say about this situation?"*

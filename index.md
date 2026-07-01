@@ -20,7 +20,7 @@ description: |
 
 ---
 
-Helm Bank is the largest independent depository institution headquartered in Florida — built on a culture of excellence, client focus, and forward-thinking leadership. This master class brings that same standard to AI education.
+Helm Bank USA is Miami's premier international gateway bank — purpose-built to serve multinational companies and foreign nationals building financial connections between Latin America and the United States. Founded in 1989 and guided by core values of Empathy, Curiosity, Creativity, and Passion, Helm Bank brings boutique relationship banking to a globally-minded clientele. This master class brings that same standard of excellence to AI education.
 
 This is not a general AI overview. Every concept, every exercise, and every example has been designed for the specific realities of banking at Helm Bank — commercial lending, relationship management, operations, compliance, and executive leadership.
 
