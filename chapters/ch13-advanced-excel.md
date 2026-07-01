@@ -80,7 +80,7 @@ The rest of this chapter builds each of these capabilities systematically.
 
 The most powerful thing you can do with Copilot in Excel is not ask it a question. It is use Copilot to help you design a **repeatable analytical template** — a structured workbook that produces the same rigorous output every time, regardless of who runs it.
 
-Consider the Monthly Branch Performance Review. Every Regional Manager at Helm Bank needs to understand how their branches are performing on deposit growth, loan production, DDA account acquisition, and service fees. Historically, producing this review required either a dedicated analyst or a RM who knew Excel well enough to build Pivot Tables and formula chains under deadline.
+Consider the Monthly International Portfolio Performance Review. Every relationship manager at Helm Bank needs to understand how their international client portfolio is performing — cross-border wire volumes, multi-currency balance trends, HelmInOne platform adoption, and Latin America corridor transaction flows. Historically, producing this review required either a dedicated analyst or a RM who knew Excel well enough to build Pivot Tables and formula chains under deadline.
 
 Copilot changes the construction cost of the template — not the template's existence.
 
@@ -99,21 +99,21 @@ A well-designed analytical template separates concerns across five layers. Copil
 
 **Step 2 — Use Copilot to build the validation layer.** Ask Copilot:
 
-> *"My input table has columns for Branch, Month, DDA Balance, Loan Balance, New DDA Accounts, and Service Fees. What formulas should I add to verify that no branch is missing, no values are blank, and the totals match my expected range? Explain each formula before generating it."*
+> *"My input table has columns for Client ID, Currency, Wire Volume (USD equivalent), Country of Origin, Transaction Count, and Month. What formulas should I add to verify that no client record is missing, no values are blank, and the totals match my expected range? Explain each formula before generating it."*
 
-Copilot will suggest formulas using `COUNTA`, `SUMIF`, `ISBLANK`, and conditional logic. The "explain before generating" instruction ensures you understand each formula before accepting it — a discipline that matters when the output informs a leadership conversation.
+Copilot will suggest formulas using `COUNTA`, `SUMIF`, `ISBLANK`, and conditional logic. The "explain before generating" instruction ensures you understand each formula before accepting it — a discipline that matters when the output informs a compliance or ALCO conversation.
 
-**Step 3 — Build the calculation engine.** With validated input data, use Copilot to construct the derived metrics your review requires. For a branch performance review:
+**Step 3 — Build the calculation engine.** With validated input data, use Copilot to construct the derived metrics your review requires. For an international portfolio review:
 
-> *"In my Branch Performance table, I need to calculate month-over-month DDA balance change as a percentage, flag any branch where new DDA accounts are more than 20% below the prior month, and rank branches by total deposit growth. Generate the formulas for each and explain the logic."*
+> *"In my Cross-Border Transaction table, I need to calculate month-over-month wire volume change as a percentage by currency, flag any client where USD-equivalent volume has increased more than 50% month-over-month (a potential AML monitoring trigger), and rank clients by total cross-border transaction volume. Generate the formulas for each and explain the logic."*
 
 Each formula Copilot generates should be reviewed and understood. This is not distrust of Copilot — it is professional rigor that mirrors how you would review an analyst's work.
 
 **Step 4 — Create the dashboard.** Ask Copilot to suggest visualization structures:
 
-> *"Based on my Branch Performance table with these columns [list them], what charts and summary visuals would give a Regional Manager the clearest picture of branch health in under 60 seconds? Suggest the chart types and data ranges."*
+> *"Based on my Cross-Border Transaction table with these columns [list them], what charts and summary visuals would give a relationship manager the clearest picture of international client portfolio activity and any AML risk signals in under 60 seconds? Suggest the chart types and data ranges."*
 
-Copilot will suggest specific chart types — waterfall charts for balance changes, bar charts for branch ranking, line charts for trend lines — and can generate them from natural language: "Create a bar chart comparing DDA balance growth by branch for this month versus last month."
+Copilot will suggest specific chart types — waterfall charts for volume changes, bar charts for country-of-origin concentration, line charts for multi-currency trend lines — and can generate them from natural language: "Create a bar chart comparing international wire volume by currency pair for this month versus last month."
 
 **Step 5 — Document the template.** Add a Documentation sheet that explains what data to paste, where, and in what format. Use Copilot in Word or directly in a text cell to draft this documentation from a description of the process. A template that only you can run is a productivity tool. A template that any RM can run is an institutional asset.
 
@@ -129,7 +129,7 @@ For organizations needing true scheduled automation, that requires Power Automat
 
 One of Copilot's confirmed and significant capabilities is identifying outliers — data points that deviate meaningfully from expected patterns. In banking analytics, this capability is not a convenience. It is a risk management tool.
 
-The stakes are higher in banking than in most industries. An anomalous spike in DDA withdrawals from a single branch might indicate fraud, operational error, or a macroeconomic event affecting a specific geography. An anomalous pattern in loan performance across a commercial real estate concentration could be an early signal of portfolio stress. Catching these signals early — before they surface as regulatory findings or credit losses — is the analytical work that protects the institution.
+The stakes are higher in banking than in most industries. An anomalous spike in international wire volume from a single client might indicate suspicious activity, unauthorized access to the HelmInOne platform, or a legitimate large transaction requiring enhanced documentation. An anomalous pattern in multi-currency balances across a Latin America corridor concentration could be an early signal of FX risk or an AML monitoring trigger. Catching these signals early — before they surface as regulatory findings or credit losses — is the analytical work that protects the institution.
 
 Copilot can identify these anomalies in seconds. But what Copilot cannot do is validate them, investigate them, or determine whether they represent real risk or data error. That is the human's job. Understanding this division clearly is essential to using anomaly detection safely in a banking context.
 
@@ -146,23 +146,23 @@ Anomaly detection is a three-stage process. Copilot handles Stage 1 with speed a
 
 The quality of Copilot's anomaly detection depends directly on the quality of the questions you ask. Vague questions produce vague results. Specific, contextually grounded questions produce actionable flagging.
 
-**For DDA activity analysis:**
+**For international wire transaction anomaly detection (AML monitoring):**
 
-> *"Look at the DDA Balance column. Flag any branch where the month-over-month change is more than two standard deviations from the branch's own 12-month average change. Highlight those rows and explain why each was flagged."*
+> *"Look at the Wire Volume (USD equivalent) column. Flag any client where the month-over-month change is more than two standard deviations from that client's own 12-month average wire volume. Highlight those rows and explain why each was flagged."*
 
-This question is specific because it defines the comparison baseline (the branch's own history), the threshold (two standard deviations), and the output format (highlighted rows with explanations). Copilot can execute this query and present the results as a sorted table or a chart showing branches on a normal distribution with flagged outliers marked.
+This question is specific because it defines the comparison baseline (the client's own history), the threshold (two standard deviations), and the output format (highlighted rows with explanations). Copilot can execute this query and present results as a sorted table showing clients on a distribution with flagged outliers marked — exactly the kind of anomaly signal a BSA/AML analyst needs to prioritize review.
 
-**For loan performance monitoring:**
+**For multi-currency balance monitoring:**
 
-> *"In the Loan Performance table, identify any loans where the current balance has increased month-over-month for three consecutive months without a corresponding new origination. Flag the loan IDs, show the balance trajectory, and note the deviation from the portfolio average."*
+> *"In the Multi-Currency Account table, identify any account where the USD-equivalent balance has increased more than 30% month-over-month for three consecutive months without a corresponding documented business event. Flag the account IDs, show the balance trajectory, and note the deviation from the portfolio average."*
 
-**For concentration risk identification:**
+**For Latin America corridor concentration:**
 
-> *"Analyze the CRE Loan table. Identify any property type, geography, or borrower where loans represent more than 15% of the total portfolio balance. Show the concentration as both a dollar amount and a percentage of total."*
+> *"Analyze the Cross-Border Transaction table. Identify any country corridor, currency pair, or client where transaction volume represents more than 15% of total wire volume. Show the concentration as both a USD equivalent amount and a percentage of total."*
 
-**For branch performance outliers:**
+**For FX exposure outliers:**
 
-> *"Compare each branch's DDA growth rate against the portfolio-wide average. Show me the top three over-performers and the bottom three under-performers, and flag any branch where performance has declined for two or more consecutive periods."*
+> *"Compare each currency pair's volume against the portfolio-wide average. Show me the top three over-represented currencies and flag any currency where volume concentration has increased for two or more consecutive periods — a potential signal of currency risk concentration."*
 
 ### How to Validate What Copilot Flags
 
@@ -232,9 +232,13 @@ A complementary analysis for any rate environment is deposit sensitivity — how
 
 > *"In my Deposit Composition table with columns for Depositor Type, Balance, Rate, Rate Sensitivity Classification, and Maturity, calculate the total balance and percentage for each sensitivity classification. Flag any single classification that represents more than 30% of total deposits. Create a pie chart showing the composition breakdown."*
 
-### CRE Deal Stress Testing
+### International Deal Stress Testing
 
-For commercial real estate lenders, Copilot can accelerate the construction of individual deal stress tests:
+For cross-border and FX-exposed deals, Copilot can accelerate the construction of scenario stress tests:
+
+> *"I have an international real estate acquisition financing with these parameters: [Loan Amount, LTV, Currency, Client DSCR, OFAC-screened entity, Beneficial Ownership confirmed]. Build a stress test table showing DSCR impact at three scenarios: (1) 15% USD/local currency depreciation, (2) 25% USD/local currency depreciation, (3) 25% currency depreciation combined with 10% NOI decline. Explain the formula structure for each."*
+
+For commercial real estate lenders, the traditional deal stress test remains relevant. Ask:
 
 > *"I have a CRE deal with these current financials: [NOI, Cap Rate, LTV, Debt Service Coverage Ratio, Loan Amount]. Build a stress test table showing DSCR and LTV at three stress levels: 10% NOI decline, 20% NOI decline, and 30% NOI decline combined with a 50bps cap rate expansion. Explain the formula structure for each."*
 
@@ -392,11 +396,11 @@ Risk analysis is a cycle, not a one-time task. Copilot accelerates Stages 1 and 
 
 ### Concentration Risk Analysis
 
-Concentration risk — the exposure created when loans, deposits, or counterparties cluster in a single segment — is a core focus of both internal credit policy and regulatory examination. Identifying concentrations requires aggregating the portfolio across multiple dimensions simultaneously.
+Concentration risk — the exposure created when loans, deposits, or counterparties cluster in a single segment — is a core focus of both internal credit policy and regulatory examination. For Helm Bank, concentration risk has a distinctly international dimension: heavy reliance on a single Latin American country corridor, a single currency pair, or a small number of foreign national clients can create compounding exposure.
 
-> *"In my Commercial Loan table, calculate concentration metrics across three dimensions: Property Type (what percentage of total CRE loans falls into each type?), Geography (what percentage is concentrated in each MSA?), and Borrower (what is the single largest borrower exposure as a percentage of total capital?). Flag any concentration that exceeds 25% of total portfolio. Create a summary table and a chart for each dimension."*
+> *"In my International Client Portfolio table, calculate concentration metrics across three dimensions: Country of Origin (what percentage of total cross-border volume originates from each country?), Currency Pair (what percentage of total wire volume is denominated in each currency?), and Client (what is the single largest client's wire volume as a percentage of total international transaction volume?). Flag any concentration that exceeds 25% of total. Create a summary table and a chart for each dimension."*
 
-The output of this analysis supports your Concentration Risk Report — a document that ALCO and the board receive on a regular cadence. Copilot accelerates construction of the underlying analysis. The policy interpretation — whether a 27% concentration in multifamily is acceptable given current market conditions — is an ALCO-level judgment.
+The output of this analysis supports your Concentration Risk Report — a document that ALCO and the board receive on a regular cadence. Copilot accelerates construction of the underlying analysis. The policy interpretation — whether a 35% concentration in Colombia-origin wires is acceptable given Helm Bank's strategic Bogotá corridor focus — is an ALCO-level judgment, with input from the Chief Compliance Officer given the BSA/AML implications of country concentration.
 
 ### Deposit Composition Analysis
 
@@ -412,7 +416,7 @@ The measure of an advanced Excel workflow is not whether the analysis is sophist
 
 Ask Copilot to assist with output formatting:
 
-> *"Format this Branch Performance Summary table for inclusion in an ALCO packet. The table should have a clean header, alternating row shading, bold totals row, percentage columns formatted to one decimal place, dollar columns formatted with commas and no cents, and a color indicator (green/yellow/red) in the Performance Rating column based on the values. Suggest the exact formatting steps."*
+> *"Format this International Portfolio Summary table for inclusion in an ALCO packet. The table should have a clean header, alternating row shading, bold totals row, percentage columns formatted to one decimal place, dollar columns formatted with commas and no cents, and a color indicator (green/yellow/red) in the AML Risk Flag column based on threshold values. Include a Tier 1 Capital ratio row showing current ratio (29.51%) as context for concentration limits. Suggest the exact formatting steps."*
 
 ---
 
@@ -473,7 +477,7 @@ A well-structured analytics playbook converts individual expertise into institut
 
 ### What the Playbook Contains
 
-**Standard Templates.** A library of pre-built, validated Excel workbooks for the analyses that run on a regular cadence: monthly branch performance review, quarterly concentration risk report, annual deposit sensitivity analysis, ad-hoc CRE deal stress test. Each template includes documentation explaining how to use it, what data to input, and what the outputs mean.
+**Standard Templates.** A library of pre-built, validated Excel workbooks for the analyses that run on a regular cadence: monthly international portfolio performance review, quarterly Latin America corridor concentration report, annual FX risk and deposit sensitivity analysis, ad-hoc cross-border deal stress test, Tier 1 Capital ratio trend dashboard (benchmarked against Helm Bank's current 29.51%). Each template includes documentation explaining how to use it, what data to input, and what the outputs mean.
 
 **Proven Prompt Library.** A curated collection of Copilot prompts that have produced reliable, validated outputs for specific analytical tasks. Organized by analysis type — anomaly detection, formula generation, scenario modeling, dashboard building. Each prompt includes the context it assumes, the output it produces, and any known limitations.
 

@@ -261,17 +261,18 @@ Every major Helm Bank function should have a dedicated SharePoint site that foll
 
 **Governance note:** Vendor contracts with pricing terms may warrant separate permissioned access.
 :::
-:::{tab-item} Retail Banking
-**Site name:** Helm Bank Retail Banking  
-**Owner:** Retail Division Head  
+:::{tab-item} International Banking & HelmInOne
+**Site name:** Helm Bank International Banking  
+**Owner:** Chief Banking Officer / Head of International Relationships  
 **Libraries:**
-- Product Guides & Rate Sheets
-- Sales Scripts & Client Communication Templates
-- Branch Policies & Procedures
-- Training & Onboarding Materials
-- Customer Service Standards
+- HelmInOne Platform Documentation & Client Guides
+- Foreign National Banking Product Guides
+- International Wire & Multi-Currency Procedures
+- KYC/CIP Templates for Cross-Border Clients
+- Correspondent Banking Agreements & Due Diligence Files
+- Latin America Market Intelligence & Country Risk Profiles
 
-**Governance note:** Rate sheets that change frequently should be clearly dated and superseded versions archived — not deleted — so Copilot retrieves the current version.
+**Governance note:** KYC/CIP templates and correspondent banking agreements contain sensitive client and counterparty data — restrict access to relationship managers and compliance staff with specific need-to-know. HelmInOne product guides intended for client distribution should be in a separate, public-facing library with appropriate access controls.
 :::
 ::::
 
@@ -283,7 +284,7 @@ Copilot finds content based on what documents say and what they are named. Consi
 [Department]-[DocumentType]-[Topic]-[YYYY-MM].docx
 
 Examples:
-Commercial-Policy-CREUnderwritingStandards-2026-01.docx
+International-Policy-CrossBorderKYCProcedures-2026-01.docx
 Compliance-Procedure-BeneficialOwnershipDocumentation-2025-11.docx
 Treasury-Report-IRRSensitivityAnalysis-2026-Q1.xlsx
 Retail-Template-ClientWelcomeLetter-2025-08.docx
@@ -343,9 +344,9 @@ The recipient receives the file and a concise AI-generated summary of its conten
 
 **Helm Bank applications:**
 
-- **Credit memo distribution.** When sending a credit memo to a credit officer for review, include a Copilot summary that highlights the borrower name, loan amount, purpose, credit grade, and key risks. The reviewer can immediately orient to the document before reading in depth.
+- **Credit and onboarding memo distribution.** When sending a credit memo or international client onboarding package to a credit officer or compliance reviewer, include a Copilot summary that highlights the client's international profile, transaction overview, key compliance considerations (OFAC status, beneficial ownership, FATF country risk), and any conditions or enhanced due diligence required. The reviewer can immediately orient to the document before reading in depth.
 
-- **Regulatory update distribution.** When sharing new regulatory guidance from the OCC or CFPB with compliance staff, include a Copilot summary of the key changes. This replaces the email that someone would normally write to explain what the attachment is about.
+- **Regulatory update distribution.** When sharing new regulatory guidance from the FDIC, FinCEN, or FATF with compliance staff — including AML/BSA updates, OFAC sanctions list changes, or correspondent banking due diligence standards — include a Copilot summary of the key changes and their implications for Helm Bank's international banking operations. This replaces the email that someone would normally write to explain what the attachment is about.
 
 - **Board package preparation.** When distributing pre-read materials to board members ahead of a meeting, each document can be sent with a Copilot summary that helps board members quickly identify the documents requiring their close attention versus those that are informational.
 

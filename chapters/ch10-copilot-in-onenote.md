@@ -321,39 +321,41 @@ For commercial lenders and credit officers, the Deal Review Notebook is the deal
 
 **Section 1: Deal Overview**
 
-The deal's summary page — updated as the deal evolves. Loan amount, structure, pricing, collateral, intended use of proceeds, and the deal's current status. This is what a senior leader needs to get oriented quickly.
+The deal's summary page — updated as the deal evolves. Transaction type (commercial real estate, trade finance, cross-border wire facility, HelmInOne onboarding), deal structure, pricing, collateral (if applicable), intended use of proceeds, and the deal's current status. This is what a senior leader needs to get oriented quickly.
 
-Copilot use case: *"Summarize the Deal Overview section into a two-paragraph executive summary suitable for a preliminary deal discussion."*
+Copilot use case: *"Summarize the Deal Overview section into a two-paragraph executive summary suitable for a preliminary deal discussion with the CCO."*
 
-**Section 2: Borrower Profile**
+**Section 2: Client International Profile**
 
-Everything about the borrower: entity structure, ownership, operating history, existing banking relationships, credit history observations, and management team assessment. Each sub-topic gets its own page.
+Everything about the client's cross-border context: entity structure and jurisdiction of incorporation, beneficial ownership chain, country of origin, Latin America / US corridor business activity, existing banking relationships (including correspondent banks), and any FATF country risk considerations. Each sub-topic gets its own page.
 
-Copilot use case: *"Based on the Borrower Profile section, draft a brief borrower narrative for the credit memo."*
+Copilot use case: *"Based on the Client International Profile section, draft a brief client narrative for the credit or onboarding memo, including key AML/BSA risk factors identified."*
 
 **Section 3: Financial Analysis**
 
-The numbers — revenue history, DSCR calculations, liquidity analysis, balance sheet observations, and financial trend commentary. This section may include pasted tables or screenshots from financial statements alongside the lender's analytical commentary.
+The numbers — revenue history, liquidity analysis, balance sheet observations, multi-currency cash flow summary, and financial trend commentary. For real estate deals, include cap rate, DSCR, and LTV analysis. This section may include pasted tables or screenshots from financial statements alongside the lender's analytical commentary.
 
 Copilot use case: *"Summarize the key financial trends noted in this section. Identify any concerns or strengths that appear repeatedly across the analysis."*
 
-**Section 4: Collateral**
+**Section 4: KYC / Compliance Documentation**
 
-Property descriptions, appraisal notes, inspection findings, title observations, and collateral valuation documentation.
+CIP/KYC documentation checklist status, OFAC screening results, beneficial ownership certification, source-of-funds documentation, and any enhanced due diligence notes. For foreign national or international entity clients, this section is particularly critical and should be updated each time documentation is received or requested.
+
+Copilot use case: *"Create a task list from the KYC/Compliance section. What documentation items remain outstanding before this deal can advance?"*
 
 **Section 5: Risk Assessment**
 
-The lender's running assessment of risks — credit, operational, market, concentration, and regulatory. This is a living section updated as new information emerges.
+The lender's or RM's running assessment of risks — credit, operational, cross-border, concentration, and regulatory (including country risk, OFAC exposure, and BSA/AML factors). This is a living section updated as new information emerges.
 
-Copilot use case: *"Create a task list from the Risk Assessment section. What items still need to be verified or resolved before credit committee presentation?"*
+Copilot use case: *"Create a task list from the Risk Assessment section. What items still need to be verified or resolved before senior credit review?"*
 
-**Section 6: Credit Committee Notes**
+**Section 6: Deal Review Notes**
 
-Notes from preliminary conversations with credit officers, the credit committee submission checklist, committee feedback, and conditions attached to any approval.
+Notes from preliminary conversations with credit officers, compliance sign-off checklist, deal review feedback, and conditions attached to any approval or conditional approval.
 
 **Section 7: Decision and Conditions**
 
-The final decision, terms approved, conditions precedent, and documentation requirements. This section becomes the post-approval reference.
+The final decision, terms approved, conditions precedent, documentation requirements, and any enhanced monitoring commitments. This section becomes the post-approval reference.
 
 With this structure, any member of the credit team can open the Deal Review Notebook and ask Copilot to bring them up to speed instantly. The lead lender who built the notebook has the added benefit of a knowledge base that serves the entire deal team — reducing duplicate questions, improving handoffs, and ensuring consistency across the credit process.
 
@@ -363,14 +365,14 @@ With this structure, any member of the credit team can open the Deal Review Note
 
 :::{figure} ../images/ch10-exam-prep-notebook.png
 :label: fig-ch10-exam-prep
-:alt: Illustration of a OneNote Exam Prep Notebook for OCC and Fed regulatory examiners at a bank — notebook sidebar shows sections for Examination Scope, Key Regulatory Requirements, Evidence Log, Document Index, Open Items, and Examiner Questions and Responses — main page shows a structured Evidence Log with regulatory requirement, supporting document link, date, and status with green checkmarks, and a Copilot summary showing outstanding items count and readiness status
+:alt: Illustration of a OneNote Exam Prep Notebook for FDIC and state banking examiners at Helm Bank — notebook sidebar shows sections for Examination Scope, Key Regulatory Requirements, Evidence Log, Document Index, Open Items, and Examiner Questions and Responses — main page shows a structured Evidence Log with regulatory requirement, supporting document link, date, and status with green checkmarks, and a Copilot summary showing outstanding items count and readiness status
 :width: 80%
 :align: center
 
-An Exam Prep Notebook gives Helm Bank compliance and operations leaders a centralized, AI-ready knowledge base for regulatory examinations. Copilot can instantly surface outstanding evidence items, summarize the examination scope, and draft response documentation — transforming examination preparation from a reactive scramble into a proactive, structured readiness process.
+An Exam Prep Notebook gives Helm Bank compliance and operations leaders a centralized, AI-ready knowledge base for regulatory examinations — including BSA/AML program reviews, OFAC screening assessments, and correspondent banking due diligence audits that are central to Helm Bank's international banking profile. Copilot can instantly surface outstanding evidence items, summarize the examination scope, and draft response documentation — transforming examination preparation from a reactive scramble into a proactive, structured readiness process.
 :::
 
-Few events in a bank's operational calendar are more consequential — or more documentation-intensive — than a regulatory examination by the OCC, the Federal Reserve, or state banking regulators. Examination preparation has historically involved enormous manual effort: tracking what examiners have requested, locating evidence documents, drafting responses to findings, and ensuring nothing falls through the cracks in what can be a weeks-long process involving dozens of people.
+Few events in a bank's operational calendar are more consequential — or more documentation-intensive — than a regulatory examination by the FDIC or state banking regulators — and for Helm Bank, particularly a BSA/AML program examination, OFAC compliance review, or correspondent banking due diligence audit. Examination preparation has historically involved enormous manual effort: tracking what examiners have requested, locating evidence documents, drafting responses to findings, and ensuring nothing falls through the cracks in what can be a weeks-long process.
 
 OneNote, with Copilot, changes the preparation dynamic fundamentally. A structured Exam Prep Notebook becomes the command center for the examination — organized, searchable, and AI-assisted in ways that significantly reduce the coordination burden.
 
@@ -429,9 +431,9 @@ Microsoft's M365 ecosystem is designed to support exactly this scenario. A OneNo
 
 For Helm Bank, the team notebook scenarios with the highest value include:
 
-**Lending Team Notebooks**
+**International Banking Team Notebooks**
 
-A commercial lending team covering a specific market or industry sector can maintain a shared notebook organized by active deals, market observations, and competitive intelligence. When one lender learns something significant from a client conversation — a competitor pricing aggressively, a sector showing stress, an opportunity emerging — it goes into the team notebook. Other team members can ask Copilot to summarize the section or surface recent observations on a specific theme.
+Helm Bank's relationship management team covering Latin America and cross-border clients can maintain a shared notebook organized by active deals, market observations, and correspondent banking intelligence. When one relationship manager learns something significant from a client conversation — a Colombian family office seeking U.S. real estate exposure, a new FATF guidance update affecting transaction monitoring, an opportunity from a Bogotá correspondent partner — it goes into the team notebook. Other team members can ask Copilot to summarize the section or surface recent observations on a specific cross-border theme.
 
 **Compliance and Operations Notebooks**
 
