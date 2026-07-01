@@ -2,9 +2,9 @@
 title: "Chapter 7: Week 3, Session C — Copilot in Excel"
 subtitle: "Data Analysis, Visualization, and the Death of the Manual Pivot Table"
 short_title: "Copilot in Excel"
-description: "How Microsoft Copilot transforms Excel into a natural-language data analyst for banking professionals — generating formulas, explaining calculations, cleaning data, surfacing trends, and building charts and Pivot Tables from plain English questions. Built for Helm Bank's world: DDA growth, branch performance, loan portfolios, and deposit composition."
+description: "How Microsoft Copilot transforms Excel into a natural-language data analyst for banking professionals — generating formulas, explaining calculations, cleaning data, surfacing trends, and building charts and Pivot Tables from plain English questions. Built for Helm Bank's world: multi-currency portfolio tracking, international wire volume analytics, foreign exchange exposure, cross-border transaction monitoring, and HelmInOne platform metrics."
 label: ch-07-copilot-in-excel
-tags: [Excel, Copilot, data analysis, formula generation, data cleaning, visualization, pivot tables, trend identification, outlier detection, Helm Bank, banking analytics, DDA, branch performance, Microsoft 365]
+tags: [Excel, Copilot, data analysis, formula generation, data cleaning, visualization, pivot tables, trend identification, outlier detection, Helm Bank, banking analytics, multi-currency, international wire, FX exposure, HelmInOne, Microsoft 365]
 ---
 
 ```{admonition} Download this Chapter as PDF
@@ -39,7 +39,7 @@ Copilot in Excel does not make you a better data wrangler. It makes data wrangli
 
 This chapter covers every confirmed Copilot-in-Excel capability, grounded in what Microsoft's official documentation actually supports today. We will also be direct about the limits — what Copilot cannot reliably do and why that matters in a banking context where the cost of analytical error is real. By the end, you will know how to use these tools effectively *and* how to use them safely.
 
-Every concept lands on a Helm Bank example — DDA growth, branch performance, loan portfolio analysis, deposit composition — because that is the data you work with.
+Every concept lands on a Helm Bank example — multi-currency account portfolio tracking, international wire volume analytics, foreign exchange exposure reporting, cross-border transaction monitoring, HelmInOne platform usage metrics, and regulatory capital ratio dashboards — because that is the data you work with at Miami's premier international gateway bank.
 
 ---
 
@@ -91,7 +91,7 @@ All five? You are ready. Missing any one of them? That is likely the reason Copi
 
 **Column headers matter more than you think:**
 
-Copilot uses your column headers to understand what the data means. A column labeled "Bal" is harder for Copilot to interpret correctly than one labeled "Average DDA Balance." A column labeled "Dt" is ambiguous; "Transaction Date" is not. Invest two minutes in naming your columns clearly — it pays dividends in every Copilot interaction that follows.
+Copilot uses your column headers to understand what the data means. A column labeled "Bal" is harder for Copilot to interpret correctly than one labeled "Average USD Balance." A column labeled "Cur" is ambiguous; "Transaction Currency" is not. A column labeled "Cust" tells Copilot nothing about what kind of customer — "Foreign National Client" or "Multinational Corporate Client" carries context that improves every analysis. Invest two minutes in naming your columns clearly — it pays dividends in every Copilot interaction that follows.
 
 ---
 
@@ -116,16 +116,16 @@ The formula syntax search loop was never valuable work. It was a tax on knowing 
 
 Open your Excel workbook (in OneDrive, formatted as a table). Click the **Copilot button** in the Home tab ribbon. The Copilot pane opens on the right side of your screen. Describe the calculation you want in plain English:
 
-*"In a new column, calculate each branch's year-over-year DDA balance growth rate. The current year average balance is in the 'Avg DDA Balance CY' column and the prior year is in 'Avg DDA Balance PY'."*
+*"In a new column, calculate each client segment's year-over-year USD-equivalent balance growth rate. The current year average USD balance is in the 'Avg USD Balance CY' column and the prior year is in 'Avg USD Balance PY'."*
 
 Copilot reads your table structure, understands the columns you referenced, and generates the formula:
 ```
-=(([@[Avg DDA Balance CY]]-[@[Avg DDA Balance PY]])/[@[Avg DDA Balance PY]])*100
+=(([@[Avg USD Balance CY]]-[@[Avg USD Balance PY]])/[@[Avg USD Balance PY]])*100
 ```
 
 Along with the formula, Copilot provides an **explanation** — in plain English — of what the formula does:
 
-*"This formula calculates the percentage change from the prior year average balance to the current year average balance. A positive result means the balance grew; a negative result means it declined. The result is expressed as a percentage."*
+*"This formula calculates the percentage change from the prior year average USD-equivalent balance to the current year average balance. A positive result means the balance grew; a negative result means it declined. The result is expressed as a percentage."*
 
 Copilot then offers to add this formula as a new column in your table. You click "Insert Column" and it is done.
 
@@ -144,19 +144,19 @@ The modern replacement for VLOOKUP — more powerful, fewer limitations, but wit
 :::
 
 :::{tab-item} SUMIFS / COUNTIFS
-Multi-condition aggregation — the bread and butter of branch performance reporting. Example: *"Sum the loan originations in the 'Origination Amount' column where the 'Branch Code' column matches 'FTL-001' AND the 'Product Type' column contains 'Commercial Real Estate'."*
+Multi-condition aggregation — the bread and butter of international portfolio reporting. Example: *"Sum the international wire volume in the 'Wire Amount USD' column where the 'Destination Country' column matches 'Colombia' AND the 'Transaction Type' column contains 'Commercial Wire'."*
 :::
 
 :::{tab-item} Nested IF Logic
-The formulas that are readable at 9am and incomprehensible when debugging at 4pm. Example: *"Create a 'Risk Flag' column that shows 'High Risk' if DPD is over 90, 'Watch' if DPD is 31–90, 'Monitor' if DPD is 1–30, and 'Performing' if DPD is 0."*
+The formulas that are readable at 9am and incomprehensible when debugging at 4pm. Example: *"Create a 'Risk Flag' column that shows 'High Risk' if DPD is over 90, 'Watch' if DPD is 31–90, 'Monitor' if DPD is 1–30, and 'Performing' if DPD is 0. Also flag any accounts where the country of ownership is on the FATF grey list."*
 :::
 
 :::{tab-item} Date Calculations
-Aging, business days, quarter-end logic. Example: *"Calculate the number of calendar days between the 'Origination Date' column and today. Then add a 'Review Flag' column that marks anything over 30 days as 'Review Required'."*
+Aging, business days, quarter-end logic. Example: *"Calculate the number of calendar days between the 'Wire Initiation Date' column and today. Then add a 'Status Flag' column that marks any international wire pending over 3 business days as 'Escalate' and anything over 5 business days as 'Urgent Escalation Required'."*
 :::
 
 :::{tab-item} Statistical Functions
-Standard deviation, percentile ranking, trailing averages. Example: *"Add a column showing the 3-month rolling average of the 'Monthly Deposit Inflow' column for each branch."*
+Standard deviation, percentile ranking, trailing averages. Example: *"Add a column showing the 3-month rolling average of the 'Monthly International Wire Volume USD' column for each client segment."*
 :::
 
 ::::
@@ -194,7 +194,7 @@ Natural-language data exploration collapses the distance between "I want to unde
 
 With your data formatted as an Excel table and your file in OneDrive, open the Copilot pane and type your question — not a formula request, but an actual business question:
 
-*"Which branches had the highest DDA balance growth over the last four quarters?"*
+*"Which client segments had the highest USD-equivalent portfolio growth over the last four quarters?"*
 
 Copilot analyzes your table, runs the relevant calculations, and responds with one of several output types — whichever is most appropriate to the question:
 
@@ -209,7 +209,7 @@ You can also ask Copilot to generate a specific output type: *"Show me this as a
 
 Natural-language chart requests are one of the most practically useful Copilot-in-Excel features for banking professionals. The old process — select range, insert chart, configure type, fix axes, fix labels, resize, format — took 15–30 minutes for a non-trivial chart. The new process is a sentence:
 
-*"Create a bar chart showing monthly deposit inflows by branch for the last six months."*
+*"Create a bar chart showing monthly international wire volume by originating currency (USD, EUR, COP, BRL) for the last six months."*
 
 Copilot determines the appropriate chart type, maps your data columns to the correct axes, applies labels, and inserts the chart into your workbook. The chart is a standard Excel chart — fully editable, formatted however you need, exportable to PowerPoint with one click.
 
@@ -217,30 +217,32 @@ Copilot determines the appropriate chart type, maps your data columns to the cor
 
 ::::{tab-set}
 
-:::{tab-item} Deposit Analysis
-- *"Show me which branches have seen their average DDA balance decline for two or more consecutive months."*
-- *"Create a Pivot Table showing deposit composition — DDAs, savings, money market, and CDs — broken out by branch."*
-- *"Give me a line chart comparing total deposit growth for the top five branches over the past 12 months, with each branch as a separate line."*
-- *"Which product type has the highest average balance per account? Show me a bar chart."*
+:::{tab-item} Multi-Currency Portfolio
+- *"Show me which currency segments have seen their average USD-equivalent balance decline for two or more consecutive months."*
+- *"Create a Pivot Table showing portfolio composition — USD accounts, multi-currency accounts, foreign national personal, and multinational corporate — broken out by client type."*
+- *"Give me a line chart comparing total deposit growth for our Miami Brickell and Orlando branches over the past 12 months, with each location as a separate line, plus a third line for our international correspondent relationships."*
+- *"Which account product has the highest average USD balance per account? Show me a bar chart."*
 :::
 
 :::{tab-item} Loan Portfolio
-- *"Show me total loan originations by product type as a pie chart."*
-- *"Which loan officers have the highest origination volume this quarter? Give me a ranked table."*
-- *"Create a Pivot Table showing 30-plus day delinquencies grouped by product type and by branch."*
-- *"Show me a trend line of net charge-off rates for the commercial portfolio over the last eight quarters."*
+- *"Show me total loan originations by product type as a pie chart — include foreign national residential, commercial real estate, trade finance lines, and auto loans."*
+- *"Which business development officers have the highest origination volume this quarter? Give me a ranked table. Also show me what percentage of their originations are to foreign national versus domestic clients."*
+- *"Create a Pivot Table showing 30-plus day delinquencies grouped by product type and by borrower country of origin."*
+- *"Show me a trend line of net charge-off rates for the commercial portfolio over the last eight quarters alongside our Tier 1 Capital ratio of 29.51% for context."*
 :::
 
-:::{tab-item} Branch Performance
-- *"Which branches are above the portfolio average on deposit growth but below average on loan origination volume? List them."*
-- *"Create a bar chart of deposits per full-time employee by branch, sorted from highest to lowest."*
-- *"Show me a scatter plot of loan origination volume on one axis versus DDA balance on the other, one point per branch."*
+:::{tab-item} International Wire Analytics
+- *"Show me total international wire volume by destination country for the last quarter. Which countries represent the top 5 by transaction count and by dollar volume?"*
+- *"Create a bar chart of average wire transaction size by currency type, sorted from highest to lowest."*
+- *"Show me a scatter plot of wire volume on one axis versus average account balance on the other, one point per client segment — multinational corporate, foreign national personal, and correspondent bank."*
+- *"Which wire destination countries have shown the highest growth rate over the last four quarters? Flag any countries that appear on OFAC watchlists."*
 :::
 
-:::{tab-item} Operational Questions
-- *"How many transactions in this export are above \$50,000? What percentage of total transaction count does that represent?"*
-- *"Show me the distribution of transaction amounts as a histogram."*
-- *"What is the average transaction processing time by transaction type? Give me a summary table."*
+:::{tab-item} HelmInOne Platform Metrics
+- *"How many international wire transactions in this export are above \$50,000? What percentage of total wire count and volume does that represent?"*
+- *"Show me the distribution of HelmInOne mobile app session lengths as a histogram. Are there usage pattern differences between personal and business banking users?"*
+- *"What is the average wire processing time by destination region (Latin America, Europe, Asia)? Give me a summary table with SLA compliance rates."*
+- *"Which HelmInOne features — wire initiation, batch payments, account statements, FX rate lookup — have the highest daily active usage? Show me a ranked bar chart."*
 :::
 
 ::::
@@ -266,21 +268,21 @@ Highlighting, sorting, and filtering with natural language — the navigational 
 
 **What this looks like in practice:**
 
-*"Highlight the cells in the DDA Growth column where the value is negative."*
-Copilot applies conditional formatting to those cells — red fill, or whatever you specify — so the declining branches are immediately visible without you building a conditional formatting rule manually.
+*"Highlight the cells in the FX Exposure USD column where the value exceeds our limit threshold."*
+Copilot applies conditional formatting to those cells — red fill, or whatever you specify — so the high-exposure currency positions are immediately visible without you building a conditional formatting rule manually.
 
 *"Sort this table by total deposit balance from highest to lowest."*
 Copilot applies the sort. One sentence, done.
 
-*"Filter the table to show only branches where the loan delinquency rate is above 2 percent."*
-Copilot applies the filter. You see only the branches of interest.
+*"Filter the table to show only client segments where the loan delinquency rate is above 2 percent."*
+Copilot applies the filter. You see only the segments of interest.
 
 *"Show me only the rows where the transaction type is 'Wire Transfer' and the amount is above \$100,000."*
 Multi-condition filter. Applied instantly.
 
 **Why this matters in banking contexts:**
 
-The value of these capabilities is in their speed and their repeatability. A monthly branch performance review might involve the same sequence of sorts, filters, and highlights every single time — and each one, done manually, takes a minute or two of clicking and configuring. The Copilot workflow compresses that sequence dramatically and, importantly, keeps your hands off the mouse and your eyes on the data.
+The value of these capabilities is in their speed and their repeatability. A monthly international portfolio review might involve the same sequence of sorts, filters, and highlights every single time — and each one, done manually, takes a minute or two of clicking and configuring. The Copilot workflow compresses that sequence dramatically and, importantly, keeps your hands off the mouse and your eyes on the data.
 
 There is also a less obvious benefit: these operations are fully reversible and leave no permanent changes to your underlying data. Copilot's sorts and filters work through Excel's native sort and filter mechanisms — which means clearing them and returning to the full dataset is a single click.
 
@@ -305,11 +307,11 @@ Trend identification and outlier detection at the question level — not the cha
 
 Ask Copilot to identify trends in your dataset — not just "show me this as a chart" but the analytical synthesis that goes one step further:
 
-*"Are there any consistent trends in DDA balance growth across branches over the last six quarters?"*
+*"Are there any consistent trends in USD-equivalent balance growth across client segments over the last six quarters?"*
 
-Copilot analyzes the temporal dimension of your data, identifies directional patterns, and returns a text synthesis alongside a supporting chart. It might find: "Three branches — Fort Lauderdale Main, Coral Gables, and Aventura — have shown positive DDA balance growth in each of the last six quarters. Two branches — Hialeah and Doral — have shown declining trends for three consecutive quarters."
+Copilot analyzes the temporal dimension of your data, identifies directional patterns, and returns a text synthesis alongside a supporting chart. It might find: "USD-equivalent balances for the multinational corporate client segment have grown in each of the last six quarters. The foreign national residential client segment has shown declining average balances for two consecutive quarters — potentially reflecting currency headwinds for clients holding Latin American currencies." That synthesis — which would have required a manual review of client segment data across multiple periods — arrives in seconds.
 
-That synthesis — which would have required an analyst to manually examine 18 data points across six branches and construct a narrative — arrives in seconds.
+
 
 **Outlier detection:**
 
@@ -321,7 +323,7 @@ Copilot applies statistical analysis to the dataset — looking for values that 
 
 In a loan portfolio context: *"Which accounts have DPD values that are significantly higher than others in the same product category?"* Copilot identifies the statistical outliers within each product category, rather than just showing you the overall highest DPD values.
 
-In a deposit context: *"Are there any branches where the month-over-month change in average balance is unusually large in either direction?"* Copilot finds the statistical extremes and flags them.
+In an international wire context: *"Are there any wire transactions this month where the amount, destination country, or transaction frequency is statistically unusual compared to this client's prior 12-month pattern?"* Copilot finds the statistical extremes and flags them — useful for BSA/AML transaction monitoring pre-review before a trained compliance officer makes the determination.
 
 **The critical professional discipline:**
 
@@ -344,21 +346,24 @@ The professional's job is to investigate the flag, not to act on it. Copilot fou
 * - Function
   - Sample Copilot Question
   - Output Type
-* - Deposit Monitoring
-  - "Which branches have shown declining non-interest-bearing deposit ratios for three or more consecutive months?"
+* - Multi-Currency Monitoring
+  - "Which currency segments have shown declining USD-equivalent balances for three or more consecutive months? Could any of this be attributable to FX rate movement rather than actual balance outflow?"
   - Trend summary + line chart
-* - Loan Oversight
-  - "Are there any loan accounts where the DPD has jumped by more than 30 days since last month?"
+* - International Wire Oversight
+  - "Are there any international wire patterns this month that fall outside the typical frequency or amount range for the sending client?"
   - Flagged table + text summary
-* - Branch Benchmarking
-  - "Which branches are below the average on deposits per FTE? Rank them."
-  - Sorted summary table
-* - Outlier Investigation
-  - "Show me the top 10 transactions by dollar amount this month. Do any appear unusual in the context of the full dataset?"
+* - FX Exposure Analysis
+  - "What is our current foreign currency exposure by currency type? Show me a breakdown of COP, BRL, EUR, and other non-USD balances converted to USD at today's rates."
+  - Sorted summary table + pie chart
+* - BSA/AML Pre-Screen
+  - "Show me the top 10 international wire transactions by dollar amount this month. Do any involve destination countries that carry elevated regulatory risk?"
   - Highlighted rows + analysis note
-* - Composition Shift
-  - "Has the ratio of commercial to retail deposits changed significantly in any branch over the last four quarters?"
+* - Portfolio Composition Shift
+  - "Has the ratio of foreign national personal to multinational corporate deposits changed significantly over the last four quarters? Show the trend."
   - Pivot Table + trend chart
+* - Capital Ratio Dashboard
+  - "Plot our Tier 1 Capital ratio (29.51% as of Q1 2026) against the regulatory minimum of 6% and the well-capitalized threshold of 8% on a gauge chart. How much headroom do we have for loan portfolio growth?"
+  - Visual gauge chart + text analysis
 ```
 
 ---
@@ -438,7 +443,7 @@ Copilot can generate a formula that is syntactically correct — it runs without
 ::::{admonition} ⚠️ Known Copilot Limitation: Statistical Interpretation
 :class: warning
 
-When Copilot identifies "trends" or "outliers," it is applying basic statistical logic to the data in front of it. It does not know your business context — it does not know that one branch had an unusually large balance spike because of a one-time municipal deposit that was subsequently moved, or that a spike in delinquencies reflects a single large commercial relationship rather than a systemic issue. Context is yours to provide. Copilot finds the statistical signal; you interpret it.
+When Copilot identifies "trends" or "outliers," it is applying basic statistical logic to the data in front of it. It does not know your business context — it does not know that one client segment had an unusually large balance spike because of a one-time large correspondent funding inflow that was subsequently repatriated, or that a spike in delinquencies reflects a single large foreign national relationship rather than a systemic issue. Context is yours to provide. Copilot finds the statistical signal; you interpret it.
 ::::
 
 **The verification protocol for banking professionals:**
@@ -494,7 +499,7 @@ Knowing the limits is as important as knowing the capabilities. Effective Copilo
 
 **It cannot guarantee formula correctness.** Copilot generates formulas based on its understanding of your description and your table structure. If your description is ambiguous, or if your table structure is unusual, the formula may be wrong. There is no substitute for spot-checking.
 
-**It does not know your business context.** Copilot cannot know that one branch had a one-time large deposit from a municipal client that distorted the quarter, that a loan officer is on leave and their pipeline should be excluded, or that last month's figures were restated. It works with the numbers in front of it. You provide the context that makes those numbers meaningful.
+**It does not know your business context.** Copilot cannot know that one client segment had a one-time large inflow from a correspondent funding event that distorted the quarter, that a business development officer is on leave and their pipeline should be excluded, or that last month's figures were restated. It works with the numbers in front of it. You provide the context that makes those numbers meaningful.
 
 **It cannot perform regulatory-grade analysis.** Any analysis that feeds a regulatory report — a Call Report, a stress test submission, an exam response — requires human validation, documented methodology, and professional sign-off. Copilot can help build the analysis, but it cannot substitute for the analytical validation process that banking regulators expect.
 
@@ -558,10 +563,10 @@ The six-step Copilot-in-Excel workflow — from raw data to verified analytical 
 **Time required:** 20–25 minutes
 
 **What you need:**
-A sample transaction or branch performance file. If you do not have one readily available, create a simple table in Excel with these columns:
-- Branch Code | Branch Name | Month | DDA Balance | Savings Balance | Loan Outstandings | Origination Volume | DPD Rate
+A sample international banking analytics file. If you do not have one readily available, create a simple table in Excel with these columns:
+- Client Segment | Client Type | Month | USD Balance | Wire Volume USD | Wire Count | Primary Currency | DPD Rate | Country of Origin
 
-Add 36–60 rows covering 3–5 branches over 6–12 months. The data does not have to be real — round numbers work fine for the exercise. Save the file to your OneDrive for Business.
+Add 36–60 rows covering 3–4 client segments (e.g., Multinational Corporate — Latin America, Foreign National Personal, Domestic Commercial, HelmInOne Digital-Only) over 6–12 months. The data does not have to be real — round numbers work fine for the exercise. Save the file to your OneDrive for Business.
 
 ---
 
@@ -570,19 +575,19 @@ Click anywhere in your data. Press **Ctrl + T**. Confirm "My table has headers" 
 
 **Step 2 — Generate a formula:**
 Open the Copilot pane (Home → Copilot). Type:
-> *"Add a column that calculates the year-over-year percentage change in DDA Balance for each branch and month combination."*
+> *"Add a column that calculates the year-over-year percentage change in USD Balance for each client segment and month combination."*
 
 Review the explanation Copilot provides. Before clicking "Insert Column," check: Does the formula reference the correct columns? Does the explanation match what you asked for? If yes, insert it. Then spot-check the result on three rows manually.
 
 **Step 3 — Ask a business question:**
 Type:
-> *"Which branch has shown the most consistent DDA balance growth across all the months in this data? Show me the answer as a chart."*
+> *"Which client segment has shown the most consistent USD balance growth across all the months in this data? Show me the answer as a chart."*
 
 Review what Copilot produces. Is the chart type appropriate? Do the axes make sense? Does the visual align with what you see when you scan the raw data?
 
 **Step 4 — Request a Pivot Table:**
 Type:
-> *"Create a Pivot Table summarizing average DDA Balance and average Loan Outstandings by branch."*
+> *"Create a Pivot Table summarizing average USD Balance, average Wire Volume USD, and average Wire Count by client segment."*
 
 Review the Pivot Table. Verify the aggregation method (average, not sum or count). Confirm that every branch appears and the numbers look consistent with the source data.
 
@@ -625,7 +630,7 @@ The fundamental reallocation that Copilot in Excel enables — not from humans t
 
 **For Helm Bank specifically:**
 
-Every analytical professional at Helm Bank — every relationship manager who builds client performance summaries, every credit analyst who models loan risk, every branch manager who tracks deposit composition, every operations professional who reviews transaction data — can do more, faster, with better documentation of how they got there.
+Every analytical professional at Helm Bank — every relationship manager who builds multi-currency client performance summaries, every credit analyst who models foreign national loan risk, every operations professional who monitors cross-border wire patterns, every compliance professional who reviews international transaction data for BSA/AML triggers — can do more, faster, with better documentation of how they got there. At a 158-person institution with a Tier 1 Capital ratio of 29.51% and a mission to serve the world's most internationally-minded clients, the ability to extract insight from complex, multi-currency data quickly is not a luxury. It is a competitive necessity.
 
 The competitive dimension is real. Banks that build organizational fluency in AI-assisted analytics will have professionals who answer harder questions faster, with more consistent quality, and with capacity for more of the client-facing and judgment-intensive work that drives relationship value.
 

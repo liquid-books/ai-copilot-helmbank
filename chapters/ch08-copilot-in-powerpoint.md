@@ -62,7 +62,7 @@ Building a professional presentation is not a simple task. It is a composite of 
 
 Copilot in PowerPoint targets the structural design, prose writing, and formatting categories. It does not replace content assembly (you still need to know what you're presenting) and it absolutely does not replace verification (you still need to check everything). But it compresses three categories of work that can together consume three to four hours of a senior professional's time into a task that takes ten to twenty minutes of prompting and review.
 
-For a regional bank that depends on its human talent — relationship managers, credit officers, compliance professionals, operations leaders — that compression is not trivial. It is the difference between a Sunday at home and a Sunday at the office. It is the difference between a well-rested executive at the board meeting and an exhausted one. Over hundreds of presentations per year, across dozens of professionals, it represents a measurable shift in capacity.
+For an international gateway bank like Helm Bank that depends on its human talent — relationship managers, credit officers, compliance professionals, operations leaders — that compression is not trivial. It is the difference between a Sunday at home and a Sunday at the office. It is the difference between a well-rested executive at the board meeting and an exhausted one. Over hundreds of presentations per year, across dozens of professionals, it represents a measurable shift in capacity.
 
 :::{note}
 **The deck crunch in banking numbers:** Research on professional service firms consistently shows that knowledge workers spend 15–25% of their total work time creating presentations. For Helm Bank professionals averaging 50-hour weeks, that is 7.5 to 12.5 hours per week on decks. Copilot in PowerPoint does not eliminate that time — but compressing structural and formatting work by 60–70% frees 5–9 hours per week per professional for higher-value work.
@@ -135,7 +135,7 @@ Everything starts with the prompt. You describe, in natural language, the presen
 
 A thin prompt sounds like: *"Create a presentation about our lending program."*
 
-A professional-grade prompt sounds like this: *"Create a 10-slide executive presentation for Helm Bank's board of directors summarizing Q2 2025 commercial real estate loan portfolio performance. Include: an executive summary with headline metrics, a portfolio overview by property type (multifamily, office, retail, industrial), a performance metrics slide showing DSCR distribution and LTV ratios, a geographic concentration slide focused on Florida markets, a credit quality summary with delinquency rates and classified asset trends, a rate environment impact analysis, two slides on our top opportunities in the pipeline, and a closing slide with strategic priorities for Q3. Formal executive tone. Helm Bank brand standards."*
+A professional-grade prompt sounds like this: *"Create a 10-slide executive presentation for Helm Bank's board of directors summarizing Q2 2025 international portfolio and strategic performance. Include: an executive summary with headline metrics (total assets $1.16B, Tier 1 Capital 29.51%), a deposit portfolio overview by client segment (multinational corporate, foreign national personal, HelmInOne digital-only), a performance metrics slide showing multi-currency deposit growth and wire volume by destination region, a Latin America market update including Bogotá representative office pipeline, a commercial loan portfolio review with foreign national and trade finance performance, an OFAC/BSA compliance program status slide, HelmInOne platform adoption and transaction volume metrics, two slides on our top growth opportunities in the pipeline, and a closing slide with strategic priorities for Q3. Formal executive tone. Helm Bank brand standards."*
 
 The difference between these two prompts is the difference between receiving a generic template and receiving a structured first draft that your board can actually engage with. The additional context in the rich prompt takes three to five minutes to write — and consistently saves thirty to sixty minutes of post-generation revision.
 
@@ -331,7 +331,7 @@ This level of specificity produces notes that are genuinely useful — not gener
 
 ### The Value for High-Stakes Presentations
 
-Consider the board presentation scenario. A board of directors at a regional bank is not a monolithic audience. It includes former bankers who understand credit deeply, business leaders from other industries who need concepts explained, risk management professionals who want precision, and community leaders who want narrative and context. A good presenter reads the room and adjusts. Good speaker notes anticipate that range and give you material to draw from for each type of question.
+Consider the board presentation scenario. A board of directors at an international bank like Helm Bank is not a monolithic audience. It includes former bankers who understand credit deeply, business leaders from other industries who need concepts explained, risk management professionals who want precision, and international banking and Latin America market experts who want strategic context. A good presenter reads the room and adjusts. Good speaker notes anticipate that range and give you material to draw from for each type of question.
 
 Copilot can draft that range of notes faster than you can write them. You then refine them — adding your specific institutional knowledge, the particular dynamics of your board, the current priorities that should color how you frame each point. The result is a presentation you can deliver with confidence because the intellectual scaffolding is already built.
 
@@ -370,7 +370,7 @@ Copilot reads the presentation — which must be saved in OneDrive or SharePoint
 
 **Cross-department alignment:** Another department has prepared a detailed operational report that affects your area. Copilot extracts the sections relevant to your function so you can respond quickly and accurately.
 
-**Acquisition or vendor due diligence:** A 50-slide vendor proposal lands in your inbox. Before committing time to a full review, ask Copilot to summarize the key claims, pricing structure, and implementation requirements.
+**Correspondent bank or vendor due diligence:** A 50-slide correspondent banking proposal from a new Latin American correspondent bank lands in your inbox. Before committing time to a full review, ask Copilot to summarize the key claims, AML program credentials, transaction limits, and implementation requirements for the relationship.
 
 In each case, the summary is a starting point for your review — not a replacement for it. When the stakes are high, read the original. Use the summary to orient yourself, not to substitute for the primary source.
 
@@ -483,7 +483,7 @@ Four deck types, four distinct workflows. The Helm Bank professional who masters
 
 1. Begin with the Word-based executive summary or strategic report that was prepared for this quarter, saved in OneDrive
 2. Open the Helm Bank board deck template in PowerPoint
-3. Invoke Copilot Agent Mode with a prompt referencing the Word document: *"Create a 12-slide board presentation based on [Q2 Executive Summary]. Structure: Executive Summary → Portfolio Performance → Risk Overview → Market Environment → Strategic Priorities → Q3 Outlook. Board-level executive tone. Lead with conclusions, support with data."*
+3. Invoke Copilot Agent Mode with a prompt referencing the Word document: *"Create a 12-slide board presentation based on [Q2 International Portfolio Executive Summary]. Structure: Executive Summary → International Portfolio Performance by Client Segment → Latin America Market Update → HelmInOne Digital Platform Adoption → Regulatory Capital Position (Tier 1 Capital 29.51%) → Risk Overview (OFAC/BSA, FX Exposure, Concentration) → Orlando Branch Progress → Bogá Representative Office Pipeline → Strategic Priorities → Q3 Outlook. Board-level executive tone. Lead with conclusions, support with data."*
 4. Review and refine the outline before slide generation
 5. After generation, ask Copilot to: add speaker notes for each slide, tighten all slide titles to eight words or fewer, and confirm the executive summary slide captures the three most important points
 6. Verify every number against the source financial data
@@ -493,9 +493,9 @@ Four deck types, four distinct workflows. The Helm Bank professional who masters
 
 ### Workflow 2 — Loan Committee Package
 
-**The scenario:** Credit committee review of a commercial loan request, modification, or renewal.
+**The scenario:** Credit committee review of a commercial or foreign national loan request, modification, or renewal.
 
-**Audience:** Credit officers, senior lenders, risk managers, and committee members with deep lending expertise. They will probe the analysis. They know what good underwriting looks like. They will find errors.
+**Audience:** Credit officers, senior lenders, risk managers, and committee members with deep lending expertise. They will probe the analysis. They know what good underwriting looks like â including for foreign national borrowers, international income documentation, and OFAC compliance. They will find errors.
 
 **Recommended Copilot workflow:**
 
@@ -518,12 +518,12 @@ Four deck types, four distinct workflows. The Helm Bank professional who masters
 
 1. Source documents must include the actual policy documents, the most recent program assessment, audit findings, and any prior examination management responses — all in OneDrive
 2. Start with the regulatory affairs or compliance PowerPoint template
-3. Prompt: *"Create a 15-slide examination readiness briefing for our BSA/AML compliance program. Structure: Program Overview → Governance → Risk Assessment → Customer Identification Program → Enhanced Due Diligence → Transaction Monitoring → SAR Filing Process → Training Program → Audit Coverage → Prior Exam Findings and Remediation → Program Assessment. Formal regulatory compliance tone. Every section must include program documentation references."*
+3. Prompt: *"Create a 15-slide examination readiness briefing for our BSA/AML compliance program, with particular emphasis on our international wire transfer monitoring and foreign national account due diligence. Structure: Program Overview → Governance → Risk Assessment (International Focus) → Customer Identification Program for Foreign Nationals → Enhanced Due Diligence for High-Risk Jurisdictions → OFAC Screening Procedures → International Wire Transaction Monitoring → SAR Filing Process → Training Program → Correspondent Banking Controls → Audit Coverage → Prior Exam Findings and Remediation → Program Assessment. Formal regulatory compliance tone. Every section must include program documentation references and metrics on program scope."*
 4. Every claim about program scope, testing frequency, coverage statistics, and escalation thresholds must be replaced with actual, current, verifiable data from Helm Bank's systems
 5. The compliance and legal teams must review the final deck before it goes to any examiner
 6. Build an "Evidence Binder" alongside the deck — for every slide claim, document the primary source so you can produce it on request during the examination
 
-**The examiner-ready verification standard:** This is the highest-stakes verification environment. Presenting inaccurate information to federal regulators — even inadvertently — has consequences that range from credibility damage to formal supervisory action. Every word in an examiner-ready deck is verified. Every claim has a source. Every source is available on demand.
+**The examiner-ready verification standard:** This is the highest-stakes verification environment. Presenting inaccurate information to federal regulators — even inadvertently — has consequences that range from credibility damage to formal supervisory action. For Helm Bank, where the FDIC scrutinizes international wire programs, foreign national account due diligence, and OFAC compliance with particular rigor given the bank's international client base, this standard is non-negotiable. Every word in an examiner-ready deck is verified. Every claim has a source. Every source — every OFAC screening log, every SAR, every CIP record — is available on demand during the examination.
 
 ### Workflow 4 — RM Client Presentation
 

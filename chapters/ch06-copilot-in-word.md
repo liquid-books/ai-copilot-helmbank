@@ -168,7 +168,7 @@ Copilot handles this document type well when you reference the actual regulatory
 
 **Step 3:** Prompt:
 
-> *"I am a compliance officer at Helm Bank, subject to OCC supervision. Using the regulatory guidance document / [OCC bulletin], write a compliance brief suitable for senior management review. Include these sections: (1) Summary of the Guidance — plain-language description of what it requires; (2) Key Requirements — the specific obligations it creates; (3) Applicability to Helm Bank — how these requirements map to our current practices; (4) Recommended Internal Actions — what the bank needs to do; (5) Implementation Timeline — realistic sequencing. Formal compliance register."*
+> *"I am a compliance officer at Helm Bank, subject to FDIC and FinCEN oversight. Using the regulatory guidance document / [FinCEN SAR guidance update], write a compliance brief suitable for senior management review. Include these sections: (1) Summary of the Guidance — plain-language description of what it requires; (2) Key Requirements — the specific obligations it creates, particularly as they apply to international wire transfers and foreign national accounts; (3) Applicability to Helm Bank — how these requirements map to our current BSA/AML and OFAC practices for cross-border transactions; (4) Recommended Internal Actions — what the bank needs to do; (5) Implementation Timeline — realistic sequencing. Formal compliance register."*
 
 **Step 4:** Review the draft critically, section by section:
 - *Summary of the Guidance* — compare Copilot's characterization against the actual guidance text. Verify nothing was omitted or reframed in a way that changes meaning.
@@ -183,7 +183,7 @@ Policy documents are among the most tedious to write — long, carefully structu
 
 Copilot in Word significantly accelerates policy drafting when you reference the existing policy using `/`. This grounds the revision in the actual current policy rather than in Copilot's general sense of what a banking policy looks like.
 
-> *"I am updating Helm Bank's AI Acceptable Use Policy. Using the existing policy in / [current AI use policy draft], revise and expand it to address the following additions: (1) Microsoft 365 Copilot is the bank's approved enterprise AI tool — describe approved uses (drafting, summarizing, research assistance) and prohibited uses (AI-driven credit decisions without human review, sharing client PII in non-approved AI tools); (2) Add a verification requirement: all AI-generated content in external documents requires human review before distribution; (3) Add a reporting requirement for employees who encounter unexpected AI outputs. Maintain the existing policy's formal register and section structure. Effective date: [date]."*
+> *"I am updating Helm Bank's AI Acceptable Use Policy. Using the existing policy in / [current AI use policy draft], revise and expand it to address the following additions: (1) Microsoft 365 Copilot is the bank's approved enterprise AI tool — describe approved uses (drafting, summarizing, research assistance) and prohibited uses (AI-driven credit decisions without human review, sharing client PII or foreign national identification data in non-approved AI tools, using AI to conduct OFAC screening as a substitute for approved screening systems); (2) Add a verification requirement: all AI-generated content in external documents — including bilingual client communications — requires human review before distribution; (3) Add a reporting requirement for employees who encounter unexpected AI outputs. Maintain the existing policy's formal register and section structure. Effective date: [date]."*
 
 The result is a policy revision that builds on your actual existing document rather than starting from scratch — which means section numbers, defined terms, and cross-references stay consistent.
 
@@ -216,32 +216,32 @@ Here is one of the most underappreciated capabilities in Copilot for Word, and o
 A 40-page commercial lease condensed to a one-page executive summary — referencing the actual lease document with `/` so Copilot works from the real text, not general knowledge. The extraction takes under a minute. The verification — checking key provisions against the source — takes a professional another 20 minutes.
 :::
 
-### The 40-Page Lease Scenario
+### The 40-Page Correspondent Banking Agreement Scenario
 
-Helm Bank's commercial real estate team reviews hundreds of lease documents each year. A commercial lease for a retail or office property can run 40, 60, even 80 pages. Reading one thoroughly — extracting the rent schedule, renewal options, tenant obligations, co-tenancy clauses, force majeure provisions, and assignment restrictions — is a 90-minute minimum task for a trained professional.
+Helm Bank's operations and compliance teams regularly review correspondent banking agreements, international wire processing contracts, and trade finance master agreements. A full correspondent banking agreement — covering AML due diligence obligations, transaction monitoring responsibilities, currency handling protocols, and termination rights — can run 35, 50, even 70 pages. Reading one thoroughly and extracting every obligation that Helm Bank must fulfill is a 90-minute minimum task for a trained professional.
 
-Multiply that by the volume of deals in the pipeline, and you begin to see the scale of the opportunity.
+Multiply that across the volume of correspondent relationships Helm Bank manages as an international gateway bank, and you begin to see the scale of the opportunity.
 
 Here is how to do it:
 
-**Step 1:** If the lease is a PDF, convert it to Word (File → Open → select the PDF — Word converts automatically). Save the converted document to SharePoint or OneDrive.
+**Step 1:** If the agreement is a PDF, convert it to Word (File → Open → select the PDF — Word converts automatically). Save the converted document to SharePoint or OneDrive.
 
 **Step 2:** Open a new Word document. Invoke Copilot.
 
-**Step 3:** Reference the lease with `/` and prompt:
+**Step 3:** Reference the agreement with `/` and prompt:
 
-> *"Summarize this commercial lease document for a Helm Bank credit analyst reviewing a loan application. Base your summary on / [lease document]. Extract and organize: (1) Property identification and parties; (2) Lease term — commencement, expiration, extension options; (3) Rent schedule — base rent, escalation provisions, percentage rent clauses; (4) Tenant obligations — CAM, insurance, property taxes; (5) Landlord obligations; (6) Co-tenancy or kick-out provisions; (7) Assignment and subletting restrictions; (8) Default and cure provisions; (9) Material risk flags — anything unusual or potentially problematic for a lender. Format as a structured one-page executive summary."*
+> *"Summarize this correspondent banking agreement for a Helm Bank compliance officer reviewing our international wire processing obligations. Base your summary on / [correspondent banking agreement]. Extract and organize: (1) Parties and agreement scope; (2) AML and OFAC due diligence obligations on Helm Bank; (3) Transaction monitoring and reporting responsibilities; (4) Currency and settlement terms — which currencies, cut-off times, and settlement protocols; (5) Liability allocation for wire errors or fraud; (6) Termination provisions — notice requirements and wind-down obligations; (7) Renewal and renegotiation terms; (8) Material risk flags — any obligations that differ from Helm Bank's standard practices or create unusual compliance exposure. Format as a structured one-page executive summary."*
 
-Copilot processes the referenced document and produces the extraction. What you receive is a roadmap: a structured summary that surfaces the material provisions and flags potential risk areas for deeper investigation.
+Copilot processes the referenced document and produces the extraction. What you receive is a compliance roadmap: a structured summary that surfaces every material obligation and flags potential risk areas for deeper review.
 
-**The verification step — non-negotiable:** Review every extracted provision against the source document. Check the rent figures against the actual rent schedule. Verify lease term dates against the document itself. Confirm extension option terms and co-tenancy triggers. Copilot's summarization is highly reliable on well-structured documents, but **numerical details — rent amounts, dates, percentages — must always be verified against the source.** A credit decision made on a misread rent schedule is an error regardless of which tool produced it.
+**The verification step — non-negotiable:** Review every extracted provision against the source document. Check every AML obligation against the actual agreement text. Verify cut-off times and settlement terms. Confirm termination notice requirements and liability clauses. Copilot's summarization is highly reliable on well-structured documents, but **specific obligations, dates, and liability terms — must always be verified against the source.** A compliance failure arising from a misread contractual obligation is an error regardless of which tool produced it.
 
 ### Summarization Beyond Leases
 
 The same workflow applies across the document types Helm Bank professionals work with:
 
 **Financial statements saved in SharePoint:**
-> *"Using / [borrower three-year financial package], identify trends in revenue, operating margin, and debt service coverage. Flag any metrics that fall outside typical thresholds for a commercial real estate operator of this scale. Write a financial narrative suitable for inclusion in a credit memo."*
+> *"Using / [borrower three-year financial package], identify trends in revenue, operating margin, and debt service coverage. Flag any metrics that fall outside typical thresholds for a commercial real estate operator of this scale, and note any currency conversion considerations if statements are presented in a foreign currency. Write a financial narrative suitable for inclusion in a credit memo."*
 
 **Regulatory guidance saved in OneDrive:**
 > *"Using / [OCC guidance document], write a one-page summary of the key requirements and their effective dates. Identify the three actions a supervised institution most urgently needs to take."*
@@ -250,7 +250,13 @@ The same workflow applies across the document types Helm Bank professionals work
 > *"Using / [Phase 1 ESA report], summarize the key findings. Identify any recognized environmental conditions or recommendations that would be material to a commercial real estate lender."*
 
 **Prior meeting notes or call transcripts:**
-> *"Using / [meeting notes — Henderson site visit], extract the key points that are relevant to a credit memo: borrower representations about the property, financial commitments discussed, open items requiring follow-up."*
+> *"Using / [meeting notes — Grupo Andino client call], extract the key points that are relevant to a credit memo: borrower representations about the property and ownership structure, financial commitments discussed, OFAC screening status, open items requiring follow-up."*
+
+**International wire transfer instructions:**
+> *"Write a clear, bilingual (English/Spanish) international wire transfer instruction letter for a Helm Bank business client in Colombia. Base the instructions on / [HelmInOne wire transfer guide]. Include: required beneficiary information fields, SWIFT/BIC code requirements for Colombian correspondent banks, cut-off times for same-day USD wires, and Helm Bank's fraud verification protocol. Clear, client-facing language."*
+
+**OFAC screening memo:**
+> *"Write an internal OFAC compliance memo documenting the screening results for a new foreign national account opening. Using / [OFAC screening report], summarize the screening methodology, matches reviewed, and the compliance officer's determination. Formal BSA/AML compliance register."*
 
 In every case, the Copilot output is grounded in your actual document — not in general knowledge — because you referenced it with `/`. That grounding is what makes summarization useful in a professional context where accuracy matters.
 
@@ -271,13 +277,13 @@ One deal, three audiences, three completely different documents. Copilot navigat
 
 ### The Three-Audience Challenge
 
-Consider a commercial real estate loan Helm Bank has just approved — a \$7.5 million loan for a mixed-use development in Doral. The same deal needs to be described three different ways:
+Consider a foreign national residential mortgage Helm Bank has just approved — a \$1.2 million loan to a Venezuelan-American entrepreneur purchasing a primary residence in Brickell. The client holds a U.S. visa, has an ITIN, and earns income from a U.S.-based distribution business. The same deal needs to be described three different ways:
 
-**For the Board of Directors:** The board wants strategic context. They want to understand how this deal fits Helm Bank's CRE portfolio strategy, what the returns look like, what the risk profile is relative to the bank's appetite, and whether this represents the kind of credit the bank should be pursuing more aggressively. They do not want to read DSCR — they want to know what it means for the bank's overall exposure.
+**For the Board of Directors:** The board wants strategic context. They want to understand how this deal fits Helm Bank's foreign national lending strategy, what it signals about demand for residential mortgages among the bank's international client base, and whether this is the kind of high-net-worth individual relationship the bank should be pursuing more systematically through the HelmInOne onboarding experience. They do not want the OFAC screening details — they want to know what this deal means for the bank's overall relationship depth with Miami's international community.
 
-**For an OCC Examiner:** The examiner wants precision, documentation, and defensibility. They want to see every risk identified, every mitigant described, every policy compliance confirmed. They want the DSCR, the LTV, the stress test results, the loan classification, and the monitoring plan. They want language that survives scrutiny.
+**For an FDIC Examiner:** The examiner wants precision, documentation, and defensibility. They want to see every compliance step documented: the OFAC screening result, the beneficial ownership verification, the source-of-funds documentation, the foreign income conversion methodology, and the Florida foreign national property restriction compliance review. They want language that survives scrutiny.
 
-**For the Client (Borrower):** The client wants to feel that Helm Bank is committed to their project. They want to know what happens next, what they need to provide, and when they can close. They want confidence, warmth, and clarity — not regulatory language that makes them feel like a risk to be managed.
+**For the Client (Borrower):** The client wants to feel that Helm Bank is committed to helping them establish their financial life in the United States. They want to know what documents are still needed, what happens next, and when they can close. They want confidence, warmth, and clarity — in both English and Spanish if possible — not regulatory language that makes them feel like a compliance risk rather than a valued relationship.
 
 ### Using Copilot to Navigate Tone
 
@@ -289,9 +295,9 @@ Consider a commercial real estate loan Helm Bank has just approved — a \$7.5 m
 
 **Step 3:** Repeat for each audience, each time referencing the same source document:
 
-> *"Using / [deal fact summary], write a regulatory examination narrative for an OCC examiner reviewing this credit. Include loan classification, DSCR, LTV, identified risk factors and mitigants, stress test summary, and the bank's monitoring plan. Precise, defensible regulatory language."*
+> *"Using / [deal fact summary], write a regulatory examination narrative for an FDIC examiner reviewing this foreign national mortgage credit. Include loan classification, DSCR, LTV, OFAC screening documentation summary, beneficial ownership verification status, source-of-funds documentation, Florida foreign national property restriction compliance review, and the bank's monitoring plan. Precise, defensible regulatory language."*
 
-> *"Using / [deal fact summary], write a client communication to the borrower confirming loan approval. Express Helm Bank's enthusiasm for the partnership, outline the next steps in the closing process, and tell them who their primary contact is. Warm, professional, clear. No regulatory or underwriting language."*
+> *"Using / [deal fact summary], write a bilingual (English and Spanish) client communication to the borrower confirming mortgage approval. Express Helm Bank's enthusiasm for helping them establish their home in Miami, outline the next steps in the closing process including the remaining documentation checklist, and tell them who their Helm Bank relationship manager is. Warm, professional, clear. No regulatory or underwriting language. The Spanish version should be a full translation, not a summary."*
 
 **Step 4:** Review each version against its intended audience:
 - The board version needs your judgment about what is strategically material for your specific board's priorities
@@ -414,7 +420,7 @@ With multi-file grounding, you reference all relevant documents in your prompt. 
 
 **Prompting:** When you are ready to draft the credit memo, invoke Copilot and use `/` to reference each source:
 
-> *"Write a comprehensive credit memo for Helm Bank's credit committee for the Henderson Commercial Partners loan renewal. Use the following sources: / [three-year financials], / [lease abstract], / [Phase 1 ESA], / [prior site visit notes], / [current credit file]. Structure the memo with: Borrower Overview, Relationship History, Loan Request, Collateral Description, Financial Analysis (covering the three-year trend from the financial package), Environmental Summary (from the ESA), Risk Factors and Mitigants, Recommendation. Formal credit committee language."*
+> *"Write a comprehensive credit memo for Helm Bank's credit committee for the Grupo Andino Properties loan renewal. Use the following sources: / [three-year financials], / [OFAC screening documentation], / [Phase 1 ESA], / [beneficial ownership certification], / [current credit file]. Structure the memo with: Borrower Overview and Ownership Structure, Relationship History, Loan Request, Collateral Description, Financial Analysis (covering the three-year trend from the financial package), Environmental Summary (from the ESA), OFAC and BSA Compliance Review, Risk Factors and Mitigants, Recommendation. Formal credit committee language."*
 
 Copilot produces a draft that draws from all six referenced documents. The financial analysis section will reflect the actual numbers from the financial package. The environmental section will reflect the actual ESA findings. The collateral description will draw from the actual lease abstract.
 
@@ -543,14 +549,14 @@ This is the hands-on exercise for this session. It is based on a realistic Helm 
 **What you need:** A real bullet-point email or meeting note from your current work. If you prefer a practice scenario, use the sample bullets below.
 
 **Sample scenario bullets:**
-- Met with Premier Logistics Group re: \$2.1M line of credit renewal
-- Company has been with Helm Bank 7 years, no defaults
-- Revenue up 12% year-over-year; management cites new Miami port contract
+- Met with Global Atlantic Trading Corp re: \$2.1M trade finance line of credit renewal
+- Brazilian-owned multinational importer/exporter; Helm Bank client for 7 years, no defaults
+- Revenue up 14% year-over-year; management cites expansion of U.S.–Brazil import contracts
 - DSCR on renewal: 1.28 — slightly below Helm Bank's 1.30 preferred threshold
-- CFO requesting exception consideration — has already spoken to senior RM
-- Environmental screen passed; no liens or judgments
-- Proposed terms: 12-month revolving LOC, Prime + 1.50%, annual review
-- Need credit committee decision by end of week — client has a warehouse closing Friday
+- CFO requesting exception consideration — has already spoken to senior RM; OFAC re-screening completed, no issues
+- Beneficial ownership documentation current; no liens or judgments
+- Proposed terms: 12-month revolving LOC with standby Letter of Credit sublimit, Prime + 1.50%, annual review
+- Need credit committee decision by end of week — client has a shipment financing deadline Friday
 
 **Steps:**
 
