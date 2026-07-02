@@ -65,9 +65,10 @@ project:
       file: chapters/ch22-final-showcase.md
 
 site:
+  url: https://bainking.net
   title: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
   options:
     logo_text: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
-    logo_url: "https://liquid-books.github.io/ai-copilot-helmbank/"
+    logo_url: "https://bainking.net"
   parts:
     primary_sidebar_footer: primary-sidebar-footer.md
