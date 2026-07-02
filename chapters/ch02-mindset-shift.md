@@ -7,12 +7,6 @@ label: ch-02-mindset-shift
 tags: [mindset, AI adoption, growth mindset, orchestrator, Helm Bank, change, purpose]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch02-mindset-shift.pdf)
-```
-
 # Chapter 2: The Mindset Shift
 
 :::{figure} ../images/ch02-mindset-shift-infographic.png
