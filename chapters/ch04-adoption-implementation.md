@@ -7,12 +7,6 @@ label: ch-04-adoption-implementation
 tags: [AI adoption, implementation, financial services, Microsoft Copilot, governance, compliance, OCC, ROI, Center of Excellence, Helm Bank]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch04-adoption-implementation.pdf)
-```
-
 # Chapter 4: Adoption & Implementation of AI
 
 :::{figure} ../images/ch04-adoption-infographic.png
