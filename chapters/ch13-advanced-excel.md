@@ -7,12 +7,6 @@ label: ch-13-advanced-excel
 tags: [Excel, Copilot, advanced analytics, anomaly detection, scenario modeling, sensitivity analysis, Python in Excel, financial dashboards, ALCO, risk analysis, Helm Bank, banking analytics, formula generation, concentration risk]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch13-advanced-excel.pdf)
-```
-
 # Chapter 13: Week 4, Session C — Advanced Copilot in Excel
 
 :::{figure} ../images/ch13-advanced-excel-infographic.png
