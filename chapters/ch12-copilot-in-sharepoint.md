@@ -7,12 +7,6 @@ label: ch-12-copilot-in-sharepoint
 tags: [SharePoint, Microsoft Copilot, knowledge management, content governance, permissions, Helm Bank, Microsoft Graph, oversharing, compliance, banking]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch12-copilot-in-sharepoint.pdf)
-```
-
 # Chapter 12: Copilot in SharePoint
 
 :::{figure} ../images/ch12-sharepoint-copilot-infographic.png
