@@ -42,19 +42,7 @@ By the time you complete this program, you will not just understand AI. You will
 
 ## 📥 Session Decks
 
-**[⬇ Session 1 — The Essence of AI with Microsoft Enterprise Copilot (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/The_Essence_of_AI_with_Microsoft_Enterprise_Copilot.pdf)**
-
-**[⬇ Session 2 (Part 1) (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/2_Session2_Part1.pdf)**
-
-**[⬇ Session 2 (Part 2) (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/2_Session2_Part2.pdf)**
-
-**[⬇ Session 3 — AI as Culture: The Helm Bank Advantage (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/3_AI_as_Culture_The_Helm Bank_Advantage.pdf)**
-
-**[⬇ Session 4 — From Pilot to Enterprise (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/4_From_Pilot_to_Enterprise.pdf)**
-
-**[⬇ Session 7 — The Analyst Inside the Spreadsheet (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/7_The_Analyst_Inside_the_Spreadsheet.pdf)**
-
-**[⬇ Advanced Copilot in Excel (PDF)](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/decks/Advanced_Copilot_in_Excel.pdf)**
+*Session decks will be posted here as they become available.*
 
 ---
 
