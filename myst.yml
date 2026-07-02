@@ -1,5 +1,4 @@
 # MyST project configuration
-# Docs: https://mystmd.org/guide/configuration
 version: 1
 project:
   title: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
@@ -54,6 +53,16 @@ project:
       file: chapters/ch16-project-planning.md
     - title: "Chapter 17: AI Workflow Integration"
       file: chapters/ch17-ai-workflow-integration.md
+    - title: "Chapter 18: Showcase Project Development Workshop"
+      file: chapters/ch18-showcase-development.md
+    - title: "Chapter 19: Copilot for Compliance & Reporting"
+      file: chapters/ch19-compliance-reporting.md
+    - title: "Chapter 20: Project Refinement & Peer Review"
+      file: chapters/ch20-peer-review.md
+    - title: "Chapter 21: Dry-Run Presentations"
+      file: chapters/ch21-dry-run-presentations.md
+    - title: "Chapter 22: Final Coaching & Showcase Readiness"
+      file: chapters/ch22-final-showcase.md
 
 site:
   title: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
