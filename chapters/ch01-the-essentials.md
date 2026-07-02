@@ -7,12 +7,6 @@ label: ch-01-essentials
 tags: [LLM, tokens, context, Copilot, meta-prompting, agents, Microsoft 365]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch01-the-essentials.pdf)
-```
-
 # Chapter 1: The Essentials
 
 :::{figure} ../images/ch01-essentials-infographic.png
