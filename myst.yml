@@ -68,6 +68,6 @@ site:
   title: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
   options:
     logo_text: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
-    logo_url: "/"
+    logo_url: "https://liquid-books.github.io/ai-copilot-helmbank/"
   parts:
     primary_sidebar_footer: primary-sidebar-footer.md
