@@ -5,12 +5,10 @@ project:
   title: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
   authors:
     - name: Dr. Ernesto Lee
-  # Book-level attributes
   keywords: []
   license: CC-BY-4.0
   open_access: true
   github: https://github.com/liquid-books/ai-copilot-helmbank
-  # Numbering
   numbering:
     heading_1: true
     heading_2: true
@@ -18,7 +16,6 @@ project:
     figure: true
     table: true
     equation: true
-  # Table of contents — chapters added here as they are written
   toc:
     - file: index.md
     - title: "Introduction: Why This Moment Matters"
@@ -43,10 +40,20 @@ project:
       file: chapters/ch09-copilot-in-teams.md
     - title: "Chapter 10: Copilot in OneNote"
       file: chapters/ch10-copilot-in-onenote.md
+    - title: "Chapter 11: Advanced Prompting"
+      file: chapters/ch11-advanced-prompting.md
     - title: "Chapter 12: Copilot in SharePoint"
       file: chapters/ch12-copilot-in-sharepoint.md
     - title: "Chapter 13: Advanced Copilot in Excel"
       file: chapters/ch13-advanced-excel.md
+    - title: "Chapter 14: Cross-Tool AI Workflows"
+      file: chapters/ch14-cross-tool-workflows.md
+    - title: "Chapter 15: Advanced Copilot in PowerPoint & Teams"
+      file: chapters/ch15-advanced-powerpoint-teams.md
+    - title: "Chapter 16: Project Planning Workshop"
+      file: chapters/ch16-project-planning.md
+    - title: "Chapter 17: AI Workflow Integration"
+      file: chapters/ch17-ai-workflow-integration.md
 
 site:
   title: "The Essence of AI: A Microsoft Copilot Master Class for Helm Bank"
