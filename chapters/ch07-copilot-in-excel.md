@@ -7,12 +7,6 @@ label: ch-07-copilot-in-excel
 tags: [Excel, Copilot, data analysis, formula generation, data cleaning, visualization, pivot tables, trend identification, outlier detection, Helm Bank, banking analytics, multi-currency, international wire, FX exposure, HelmInOne, Microsoft 365]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch07-copilot-in-excel.pdf)
-```
-
 # Chapter 7: Week 3, Session C — Copilot in Excel
 
 :::{figure} ../images/ch07-excel-overview-infographic.png
