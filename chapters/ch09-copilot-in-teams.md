@@ -7,12 +7,6 @@ label: ch-09-copilot-in-teams
 tags: [Copilot in Teams, meeting intelligence, transcription, action items, Teams meetings, Helm Bank, Microsoft 365, meeting recap, consent, cross-border calls, AML compliance, international banking]
 ---
 
-```{admonition} Download this Chapter as PDF
-:class: tip
-
-[Download PDF](https://github.com/liquid-books/ai-copilot-helmbank/raw/main/pdfs/ch09-copilot-in-teams.pdf)
-```
-
 # Chapter 9: Week 3, Session B — Copilot in Teams
 
 :::{figure} ../images/ch09-teams-infographic.png
